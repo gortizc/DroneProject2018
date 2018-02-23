@@ -1,0 +1,7 @@
+INFILE=/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/build/project_r.ncd
+OUTFILE=/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/build/project_r.bit
+FAMILY=Spartan6
+PART=xc6slx4-2tqg144
+WORKINGDIR=/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/build
+LICENSE=WebPack
+USER_INFO=211093682_0_0_151

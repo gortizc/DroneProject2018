@@ -1,0 +1,2163 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project.src"
+Input Format                       : mixed
+
+---- Target Parameters
+Target Device                      : xc6slx4-2tqg144
+Output File Name                   : "project.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : system
+Automatic Register Balancing       : yes
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 2
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" into library work
+Parsing module <system>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/creator_dcm.v" into library work
+Parsing module <creator_dcm>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi_berry/spi2ad_bus_sync.v" into library work
+Parsing module <spi2ad_bus>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_bram/bram.v" into library work
+Parsing module <wb_bram>.
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_bram/bram.v" Line 41. parameter declaration becomes local in wb_bram with formal parameter declaration list
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_conbus/conbus_arb.v" into library work
+Parsing module <conbus_arb>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_conbus/conbus.v" into library work
+Parsing module <conbus>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_mcu_bram/wb_mcu_bram.v" into library work
+Parsing module <wb_mcu_bram>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi/wb_spi.v" into library work
+Parsing module <wb_spi>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi/spi.v" into library work
+Parsing module <spi>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" into library work
+Parsing module <wb_gpio>.
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 41. parameter declaration becomes local in wb_gpio with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 43. parameter declaration becomes local in wb_gpio with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 44. parameter declaration becomes local in wb_gpio with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 45. parameter declaration becomes local in wb_gpio with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 47. parameter declaration becomes local in wb_gpio with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 48. parameter declaration becomes local in wb_gpio with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 49. parameter declaration becomes local in wb_gpio with formal parameter declaration list
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/pwm.v" into library work
+Parsing module <pwm>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/core_clk.v" into library work
+Parsing module <core_clk>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer.v" into library work
+Parsing module <timer>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer_core.v" into library work
+Parsing module <timer_core>.
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer_core.v" Line 65. parameter declaration becomes local in timer_core with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer_core.v" Line 66. parameter declaration becomes local in timer_core with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer_core.v" Line 67. parameter declaration becomes local in timer_core with formal parameter declaration list
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/mux_io.v" into library work
+Parsing module <mux_io>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/single_mux.v" into library work
+Parsing module <single_mux>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop_bram.v" into library work
+Parsing module <everloop_ram>.
+INFO:HDLCompiler:693 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop_bram.v" Line 41. parameter declaration becomes local in everloop_ram with formal parameter declaration list
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop.v" into library work
+Parsing module <everloop>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" into library work
+Parsing module <wb_everloop>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/mcu_pwm/mcu_pwm_controller.v" into library work
+Parsing module <mcu_pwm_controller>.
+Analyzing Verilog file "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/mcu_pwm/pwm_motor.v" into library work
+Parsing module <pwm_motor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 215: Port m0_ack_o is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 352: Port rd is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 459: Port led_fb is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 480: Port wb_ack_o is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 502: Port wb_sel_i is not connected to this instance
+
+Elaborating module <system>.
+
+Elaborating module <creator_dcm>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/creator_dcm.v" Line 72: Assignment to locked_int ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/creator_dcm.v" Line 73: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 133: Result of 27-bit expression is truncated to fit in 26-bit target.
+
+Elaborating module <conbus(s_addr_w=4,s0_addr=4'b0,s1_addr=4'b010,s2_addr=4'b0100,s3_addr=4'b0110,s4_addr=4'b1000,s5_addr=4'b1010,s6_addr=4'b1100,s7_addr=4'b1110)>.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_conbus/conbus.v" Line 282: Result of 40-bit expression is truncated to fit in 38-bit target.
+
+Elaborating module <conbus_arb>.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 239: Size mismatch in connection of port <m1_adr_i>. Formal port size is 16-bit while actual signal size is 14-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 245: Size mismatch in connection of port <m2_adr_i>. Formal port size is 16-bit while actual signal size is 14-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 251: Size mismatch in connection of port <m3_adr_i>. Formal port size is 16-bit while actual signal size is 14-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 257: Size mismatch in connection of port <m4_adr_i>. Formal port size is 16-bit while actual signal size is 14-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 263: Size mismatch in connection of port <m5_adr_i>. Formal port size is 16-bit while actual signal size is 14-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 269: Size mismatch in connection of port <m6_adr_i>. Formal port size is 16-bit while actual signal size is 14-bit.
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 285: Assignment to uart0_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 286: Assignment to uart0_adr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 287: Assignment to uart0_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 288: Assignment to uart0_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 289: Assignment to uart0_cyc ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 290: Assignment to uart0_stb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 294: Assignment to uart1_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 295: Assignment to uart1_adr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 296: Assignment to uart1_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 297: Assignment to uart1_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 298: Assignment to uart1_cyc ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 299: Assignment to uart1_stb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 323: Assignment to gpio0_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 332: Assignment to spi1_sel ignored, since the identifier is never used
+
+Elaborating module <spi2ad_bus(ADDR_WIDTH=14,DATA_WIDTH=16)>.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi_berry/spi2ad_bus_sync.v" Line 85: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <mcu_pwm_controller>.
+
+Elaborating module <pwm_motor>.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 403: Size mismatch in connection of port <pwm_addr>. Formal port size is 8-bit while actual signal size is 11-bit.
+
+Elaborating module <wb_bram(adr_width=10,mem_file_name="rtl/wb_bram/image.ram")>.
+Reading initialization file \"home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_bram/image.ram\".
+
+Elaborating module <wb_mcu_bram>.
+
+Elaborating module <RAMB16_S9_S18>.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 434: Size mismatch in connection of port <wb_adr_i>. Formal port size is 10-bit while actual signal size is 14-bit.
+WARNING:HDLCompiler:1016 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 77: Port dat_a_out is not connected to this instance
+
+Elaborating module <wb_everloop(mem_file_name="rtl/wb_everloop/image.ram")>.
+
+Elaborating module <everloop>.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop.v" Line 56: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop.v" Line 67: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <everloop_ram(adr_width=11,dat_width=8,mem_file_name="rtl/wb_everloop/image.ram")>.
+Reading initialization file \"home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/image.ram\".
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 85: Size mismatch in connection of port <adr_a>. Formal port size is 10-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 91: Size mismatch in connection of port <adr_b>. Formal port size is 10-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 108: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 114: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:1127 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 150: Assignment to CR ignored, since the identifier is never used
+
+Elaborating module <wb_gpio(GPIO_WIDTH=11)>.
+
+Elaborating module <core_clk(PRESCALER=32'sb010000)>.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/core_clk.v" Line 36: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <pwm(CORE_WIDTH=4,PWM_COUNTER_WIDTH=16)>.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/pwm.v" Line 61: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 120: Size mismatch in connection of port <duty>. Formal port size is 65-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 120: Size mismatch in connection of port <duty>. Formal port size is 65-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 120: Size mismatch in connection of port <duty>. Formal port size is 65-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 120: Size mismatch in connection of port <duty>. Formal port size is 65-bit while actual signal size is 64-bit.
+
+Elaborating module <timer(CORE_WIDTH=4,TIMER_COUNTER_WIDTH=16)>.
+
+Elaborating module <timer_core(TIMER_COUNTER_WIDTH=16)>.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer_core.v" Line 52: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <mux_io>.
+
+Elaborating module <single_mux>.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 149: Size mismatch in connection of port <sig1>. Formal port size is 16-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 152: Size mismatch in connection of port <sig2>. Formal port size is 16-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 199: Result of 16-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 200: Result of 16-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 202: Result of 16-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <wb_spi>.
+
+Elaborating module <spi>.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi/spi.v" Line 62: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi/spi.v" Line 75: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:189 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 506: Size mismatch in connection of port <wb_adr_i>. Formal port size is 16-bit while actual signal size is 14-bit.
+WARNING:HDLCompiler:634 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 159: Net <uart0_dat_r[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 161: Net <uart1_dat_r[15]> does not have a driver.
+WARNING:HDLCompiler:552 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 225: Input port m1_cti_i[2] is not connected on this instance
+WARNING:HDLCompiler:552 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 461: Input port led_fb is not connected on this instance
+WARNING:HDLCompiler:552 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 502: Input port wb_sel_i[3] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v".
+        bootram_file = "rtl/wb_bram/image.ram"
+        everloop_file = "rtl/wb_everloop/image.ram"
+        GPIO_WIDTH = 11
+WARNING:Xst:2898 - Port 'm1_cti_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm2_cti_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm3_cti_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm4_cti_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm5_cti_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm6_cti_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's3_dat_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm1_we_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm2_we_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm3_we_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm4_we_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm5_we_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'm6_we_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's0_ack_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's1_ack_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's2_ack_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's3_ack_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's4_ack_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's5_ack_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's6_ack_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 's7_ack_i', unconnected in block instance 'conbus0', is tied to GND.
+WARNING:Xst:2898 - Port 'led_fb', unconnected in block instance 'everloop0', is tied to GND.
+WARNING:Xst:2898 - Port 'wb_sel_i', unconnected in block instance 'spi1', is tied to GND.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 118: Output port <clk_out_25> of the instance <dcm> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m1_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m2_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m3_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m4_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m5_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m6_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s0_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s1_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s1_adr_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s1_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s1_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s2_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s2_adr_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s2_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s2_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s3_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s3_adr_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s3_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s3_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s4_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s5_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s5_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s6_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s6_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s7_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m0_ack_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m1_ack_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m2_ack_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m3_ack_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m4_ack_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m5_ack_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <m6_ack_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s1_we_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s1_cyc_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s1_stb_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s2_we_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s2_cyc_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s2_stb_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s3_we_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s3_cyc_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 225: Output port <s3_stb_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 355: Output port <rd> of the instance <spi0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" line 482: Output port <wb_ack_o> of the instance <gpio0> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <uart0_dat_r> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <uart1_dat_r> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 26-bit register for signal <counter>.
+    Found 26-bit adder for signal <counter[25]_GND_1_o_add_1_OUT> created at line 133.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <system> synthesized.
+
+Synthesizing Unit <creator_dcm>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/creator_dcm.v".
+    Summary:
+	no macro.
+Unit <creator_dcm> synthesized.
+
+Synthesizing Unit <conbus>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_conbus/conbus.v".
+        s_addr_w = 4
+        s0_addr = 4'b0000
+        s1_addr = 4'b0010
+        s2_addr = 4'b0100
+        s3_addr = 4'b0110
+        s4_addr = 4'b1000
+        s5_addr = 4'b1010
+        s6_addr = 4'b1100
+        s7_addr = 4'b1110
+WARNING:Xst:647 - Input <s5_ack_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s6_ack_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s7_ack_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <conbus> synthesized.
+
+Synthesizing Unit <conbus_arb>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_conbus/conbus_arb.v".
+        grant0 = 7'b0000001
+        grant1 = 7'b0000010
+        grant2 = 7'b0000100
+        grant3 = 7'b0001000
+        grant4 = 7'b0010000
+        grant5 = 7'b0100000
+        grant6 = 7'b1000000
+    Found 7-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 56                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 14                                             |
+    | Clock              | sys_clk (rising_edge)                          |
+    | Reset              | sys_rst (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000001                                        |
+    | Power Up State     | 0000001                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <conbus_arb> synthesized.
+
+Synthesizing Unit <spi2ad_bus>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi_berry/spi2ad_bus_sync.v".
+        ADDR_WIDTH = 14
+        DATA_WIDTH = 16
+WARNING:Xst:647 - Input <resetn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <SSELr>.
+    Found 2-bit register for signal <MOSIr>.
+    Found 5-bit register for signal <bit_count>.
+    Found 16-bit register for signal <data_in_sr>.
+    Found 16-bit register for signal <data_out_sr>.
+    Found 16-bit register for signal <miso_sr>.
+    Found 1-bit register for signal <data_confn>.
+    Found 1-bit register for signal <auto_inc>.
+    Found 1-bit register for signal <rd_wrn>.
+    Found 14-bit register for signal <addr_bus_latched>.
+    Found 16-bit register for signal <data_in_latched>.
+    Found 3-bit register for signal <SCKr>.
+    Found 5-bit adder for signal <bit_count[4]_GND_8_o_add_11_OUT> created at line 85.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  94 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <spi2ad_bus> synthesized.
+
+Synthesizing Unit <mcu_pwm_controller>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/mcu_pwm/mcu_pwm_controller.v".
+        adr_width = 8
+        data_width = 8
+WARNING:Xst:647 - Input <pwm_addr<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pwm_nrd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <pwm_snwe>.
+    Found 8-bit register for signal <pwm_buffer_data>.
+    Found 5-bit register for signal <pwm_buffer_addr<4:0>>.
+    Found 8-bit register for signal <pwm_wdBus>.
+    Found 1-bit register for signal <pwm_we>.
+    Found 1-bit register for signal <pwm_w_st>.
+    Found 24-bit register for signal <period>.
+    Found 24-bit register for signal <duty1>.
+    Found 24-bit register for signal <duty2>.
+    Found 24-bit register for signal <duty3>.
+    Found 24-bit register for signal <duty4>.
+    Found 1-bit register for signal <pwm_sncs>.
+    Summary:
+	inferred 145 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+Unit <mcu_pwm_controller> synthesized.
+
+Synthesizing Unit <pwm_motor>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/mcu_pwm/pwm_motor.v".
+    Found 24-bit register for signal <timeWork_reg>.
+    Found 1-bit register for signal <enable>.
+    Found 24-bit register for signal <counter>.
+    Found 1-bit register for signal <avail>.
+    Found 1-bit register for signal <PWM_out>.
+    Found 24-bit register for signal <period_reg>.
+    Found 24-bit subtractor for signal <period_reg[23]_GND_10_o_sub_20_OUT> created at line 61.
+    Found 24-bit subtractor for signal <timeWork_reg[23]_GND_10_o_sub_22_OUT> created at line 63.
+    Found 24-bit adder for signal <counter[23]_GND_10_o_add_14_OUT> created at line 50.
+    Found 24-bit comparator lessequal for signal <n0000> created at line 27
+    Found 24-bit comparator lessequal for signal <counter[23]_period_reg[23]_LessThan_14_o> created at line 49
+    Found 24-bit comparator equal for signal <counter[23]_period_reg[23]_equal_21_o> created at line 61
+    Found 24-bit comparator equal for signal <counter[23]_timeWork_reg[23]_equal_23_o> created at line 63
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  75 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <pwm_motor> synthesized.
+
+Synthesizing Unit <wb_bram>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_bram/bram.v".
+        mem_file_name = "rtl/wb_bram/image.ram"
+        adr_width = 10
+WARNING:Xst:647 - Input <wb_adr_i<13:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1024x16-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 16-bit register for signal <wb_dat_o>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <wb_bram> synthesized.
+
+Synthesizing Unit <wb_mcu_bram>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_mcu_bram/wb_mcu_bram.v".
+        adr_width = 10
+        data_width = 8
+WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <mcu_snwe>.
+    Found 8-bit register for signal <mcu_buffer_data>.
+    Found 11-bit register for signal <mcu_buffer_addr>.
+    Found 8-bit register for signal <mcu_wdBus>.
+    Found 1-bit register for signal <mcu_we>.
+    Found 1-bit register for signal <mcu_w_st>.
+    Found 1-bit register for signal <mcu_sncs>.
+    Found 1-bit tristate buffer for signal <mcu_sram_data<7>> created at line 64
+    Found 1-bit tristate buffer for signal <mcu_sram_data<6>> created at line 64
+    Found 1-bit tristate buffer for signal <mcu_sram_data<5>> created at line 64
+    Found 1-bit tristate buffer for signal <mcu_sram_data<4>> created at line 64
+    Found 1-bit tristate buffer for signal <mcu_sram_data<3>> created at line 64
+    Found 1-bit tristate buffer for signal <mcu_sram_data<2>> created at line 64
+    Found 1-bit tristate buffer for signal <mcu_sram_data<1>> created at line 64
+    Found 1-bit tristate buffer for signal <mcu_sram_data<0>> created at line 64
+    Summary:
+	inferred  31 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <wb_mcu_bram> synthesized.
+
+Synthesizing Unit <wb_everloop>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v".
+        mem_file_name = "rtl/wb_everloop/image.ram"
+WARNING:Xst:647 - Input <wb_adr_i<13:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <led_fb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" line 81: Output port <dat_a_out> of the instance <everloopram0> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <wb_dat_o> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 11-bit register for signal <adr_b>.
+    Found 1-bit register for signal <reset_everloop>.
+    Found 4-bit register for signal <clk_cnt>.
+    Found 16-bit register for signal <data_a>.
+    Found 1-bit register for signal <add_adr_a>.
+    Found 3-bit register for signal <swr>.
+    Found 4-bit adder for signal <clk_cnt[3]_GND_22_o_add_5_OUT> created at line 108.
+    Found 11-bit adder for signal <adr_b[10]_GND_22_o_add_8_OUT> created at line 114.
+    Found 4-bit comparator lessequal for signal <clk_cnt[3]_PWR_15_o_LessThan_7_o> created at line 109
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <wb_everloop> synthesized.
+
+Synthesizing Unit <everloop>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop.v".
+    Found 1-bit register for signal <sh_e>.
+    Found 3-bit register for signal <data_cnt>.
+    Found 1-bit register for signal <rd_e>.
+    Found 1-bit register for signal <rd_ant>.
+    Found 8-bit register for signal <data_register>.
+    Found 1-bit register for signal <everloop_d>.
+    Found 8-bit register for signal <clk_cnt>.
+    Found 8-bit adder for signal <clk_cnt[7]_GND_23_o_add_1_OUT> created at line 56.
+    Found 3-bit adder for signal <data_cnt[2]_GND_23_o_add_6_OUT> created at line 67.
+    Found 1-bit 4-to-1 multiplexer for signal <PWR_16_o_clk_cnt[7]_Mux_22_o> created at line 118.
+    Found 8-bit comparator greater for signal <clk_cnt[7]_GND_23_o_LessThan_19_o> created at line 121
+    Found 8-bit comparator greater for signal <clk_cnt[7]_GND_23_o_LessThan_20_o> created at line 128
+    Found 8-bit comparator greater for signal <clk_cnt[7]_PWR_16_o_LessThan_21_o> created at line 135
+    Found 8-bit comparator greater for signal <clk_cnt[7]_GND_23_o_LessThan_22_o> created at line 142
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <everloop> synthesized.
+
+Synthesizing Unit <everloop_ram>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop_bram.v".
+        mem_file_name = "rtl/wb_everloop/image.ram"
+        adr_width = 11
+        dat_width = 8
+WARNING:Xst:653 - Signal <dat_a_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:3015 - Contents of array <ram> may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+    Found 1024x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <dat_b>.
+    Found 1-bit register for signal <ack_b>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   9 D-type flip-flop(s).
+Unit <everloop_ram> synthesized.
+
+Synthesizing Unit <wb_gpio>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v".
+        GPIO_WIDTH = 11
+        WB_DAT_WIDTH = 16
+        WB_ADR_WIDTH = 14
+WARNING:Xst:647 - Input <wb_adr_i<13:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <wb_ack_o> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 11-bit register for signal <gpio_dir>.
+    Found 11-bit register for signal <gpio_out>.
+    Found 11-bit register for signal <gpio_function>.
+    Found 16-bit register for signal <core_prescaler>.
+    Found 16-bit register for signal <timer_conf>.
+    Found 64-bit register for signal <n1056[63:0]>.
+    Found 1-bit register for signal <core_clk_bank<1>>.
+    Found 1-bit register for signal <core_clk_bank<2>>.
+    Found 1-bit register for signal <core_clk_bank<3>>.
+    Found 1-bit register for signal <pwm_duty<0><15>>.
+    Found 1-bit register for signal <pwm_duty<0><14>>.
+    Found 1-bit register for signal <pwm_duty<0><13>>.
+    Found 1-bit register for signal <pwm_duty<0><12>>.
+    Found 1-bit register for signal <pwm_duty<0><11>>.
+    Found 1-bit register for signal <pwm_duty<0><10>>.
+    Found 1-bit register for signal <pwm_duty<0><9>>.
+    Found 1-bit register for signal <pwm_duty<0><8>>.
+    Found 1-bit register for signal <pwm_duty<0><7>>.
+    Found 1-bit register for signal <pwm_duty<0><6>>.
+    Found 1-bit register for signal <pwm_duty<0><5>>.
+    Found 1-bit register for signal <pwm_duty<0><4>>.
+    Found 1-bit register for signal <pwm_duty<0><3>>.
+    Found 1-bit register for signal <pwm_duty<0><2>>.
+    Found 1-bit register for signal <pwm_duty<0><1>>.
+    Found 1-bit register for signal <pwm_duty<0><0>>.
+    Found 1-bit register for signal <pwm_duty<1><15>>.
+    Found 1-bit register for signal <pwm_duty<1><14>>.
+    Found 1-bit register for signal <pwm_duty<1><13>>.
+    Found 1-bit register for signal <pwm_duty<1><12>>.
+    Found 1-bit register for signal <pwm_duty<1><11>>.
+    Found 1-bit register for signal <pwm_duty<1><10>>.
+    Found 1-bit register for signal <pwm_duty<1><9>>.
+    Found 1-bit register for signal <pwm_duty<1><8>>.
+    Found 1-bit register for signal <pwm_duty<1><7>>.
+    Found 1-bit register for signal <pwm_duty<1><6>>.
+    Found 1-bit register for signal <pwm_duty<1><5>>.
+    Found 1-bit register for signal <pwm_duty<1><4>>.
+    Found 1-bit register for signal <pwm_duty<1><3>>.
+    Found 1-bit register for signal <pwm_duty<1><2>>.
+    Found 1-bit register for signal <pwm_duty<1><1>>.
+    Found 1-bit register for signal <pwm_duty<1><0>>.
+    Found 1-bit register for signal <pwm_duty<2><15>>.
+    Found 1-bit register for signal <pwm_duty<2><14>>.
+    Found 1-bit register for signal <pwm_duty<2><13>>.
+    Found 1-bit register for signal <pwm_duty<2><12>>.
+    Found 1-bit register for signal <pwm_duty<2><11>>.
+    Found 1-bit register for signal <pwm_duty<2><10>>.
+    Found 1-bit register for signal <pwm_duty<2><9>>.
+    Found 1-bit register for signal <pwm_duty<2><8>>.
+    Found 1-bit register for signal <pwm_duty<2><7>>.
+    Found 1-bit register for signal <pwm_duty<2><6>>.
+    Found 1-bit register for signal <pwm_duty<2><5>>.
+    Found 1-bit register for signal <pwm_duty<2><4>>.
+    Found 1-bit register for signal <pwm_duty<2><3>>.
+    Found 1-bit register for signal <pwm_duty<2><2>>.
+    Found 1-bit register for signal <pwm_duty<2><1>>.
+    Found 1-bit register for signal <pwm_duty<2><0>>.
+    Found 1-bit register for signal <pwm_duty<4><15>>.
+    Found 1-bit register for signal <pwm_duty<4><14>>.
+    Found 1-bit register for signal <pwm_duty<4><13>>.
+    Found 1-bit register for signal <pwm_duty<4><12>>.
+    Found 1-bit register for signal <pwm_duty<4><11>>.
+    Found 1-bit register for signal <pwm_duty<4><10>>.
+    Found 1-bit register for signal <pwm_duty<4><9>>.
+    Found 1-bit register for signal <pwm_duty<4><8>>.
+    Found 1-bit register for signal <pwm_duty<4><7>>.
+    Found 1-bit register for signal <pwm_duty<4><6>>.
+    Found 1-bit register for signal <pwm_duty<4><5>>.
+    Found 1-bit register for signal <pwm_duty<4><4>>.
+    Found 1-bit register for signal <pwm_duty<4><3>>.
+    Found 1-bit register for signal <pwm_duty<4><2>>.
+    Found 1-bit register for signal <pwm_duty<4><1>>.
+    Found 1-bit register for signal <pwm_duty<4><0>>.
+    Found 1-bit register for signal <pwm_duty<5><15>>.
+    Found 1-bit register for signal <pwm_duty<5><14>>.
+    Found 1-bit register for signal <pwm_duty<5><13>>.
+    Found 1-bit register for signal <pwm_duty<5><12>>.
+    Found 1-bit register for signal <pwm_duty<5><11>>.
+    Found 1-bit register for signal <pwm_duty<5><10>>.
+    Found 1-bit register for signal <pwm_duty<5><9>>.
+    Found 1-bit register for signal <pwm_duty<5><8>>.
+    Found 1-bit register for signal <pwm_duty<5><7>>.
+    Found 1-bit register for signal <pwm_duty<5><6>>.
+    Found 1-bit register for signal <pwm_duty<5><5>>.
+    Found 1-bit register for signal <pwm_duty<5><4>>.
+    Found 1-bit register for signal <pwm_duty<5><3>>.
+    Found 1-bit register for signal <pwm_duty<5><2>>.
+    Found 1-bit register for signal <pwm_duty<5><1>>.
+    Found 1-bit register for signal <pwm_duty<5><0>>.
+    Found 1-bit register for signal <pwm_duty<6><15>>.
+    Found 1-bit register for signal <pwm_duty<6><14>>.
+    Found 1-bit register for signal <pwm_duty<6><13>>.
+    Found 1-bit register for signal <pwm_duty<6><12>>.
+    Found 1-bit register for signal <pwm_duty<6><11>>.
+    Found 1-bit register for signal <pwm_duty<6><10>>.
+    Found 1-bit register for signal <pwm_duty<6><9>>.
+    Found 1-bit register for signal <pwm_duty<6><8>>.
+    Found 1-bit register for signal <pwm_duty<6><7>>.
+    Found 1-bit register for signal <pwm_duty<6><6>>.
+    Found 1-bit register for signal <pwm_duty<6><5>>.
+    Found 1-bit register for signal <pwm_duty<6><4>>.
+    Found 1-bit register for signal <pwm_duty<6><3>>.
+    Found 1-bit register for signal <pwm_duty<6><2>>.
+    Found 1-bit register for signal <pwm_duty<6><1>>.
+    Found 1-bit register for signal <pwm_duty<6><0>>.
+    Found 1-bit register for signal <pwm_duty<7><15>>.
+    Found 1-bit register for signal <pwm_duty<7><14>>.
+    Found 1-bit register for signal <pwm_duty<7><13>>.
+    Found 1-bit register for signal <pwm_duty<7><12>>.
+    Found 1-bit register for signal <pwm_duty<7><11>>.
+    Found 1-bit register for signal <pwm_duty<7><10>>.
+    Found 1-bit register for signal <pwm_duty<7><9>>.
+    Found 1-bit register for signal <pwm_duty<7><8>>.
+    Found 1-bit register for signal <pwm_duty<7><7>>.
+    Found 1-bit register for signal <pwm_duty<7><6>>.
+    Found 1-bit register for signal <pwm_duty<7><5>>.
+    Found 1-bit register for signal <pwm_duty<7><4>>.
+    Found 1-bit register for signal <pwm_duty<7><3>>.
+    Found 1-bit register for signal <pwm_duty<7><2>>.
+    Found 1-bit register for signal <pwm_duty<7><1>>.
+    Found 1-bit register for signal <pwm_duty<7><0>>.
+    Found 1-bit register for signal <pwm_duty<8><15>>.
+    Found 1-bit register for signal <pwm_duty<8><14>>.
+    Found 1-bit register for signal <pwm_duty<8><13>>.
+    Found 1-bit register for signal <pwm_duty<8><12>>.
+    Found 1-bit register for signal <pwm_duty<8><11>>.
+    Found 1-bit register for signal <pwm_duty<8><10>>.
+    Found 1-bit register for signal <pwm_duty<8><9>>.
+    Found 1-bit register for signal <pwm_duty<8><8>>.
+    Found 1-bit register for signal <pwm_duty<8><7>>.
+    Found 1-bit register for signal <pwm_duty<8><6>>.
+    Found 1-bit register for signal <pwm_duty<8><5>>.
+    Found 1-bit register for signal <pwm_duty<8><4>>.
+    Found 1-bit register for signal <pwm_duty<8><3>>.
+    Found 1-bit register for signal <pwm_duty<8><2>>.
+    Found 1-bit register for signal <pwm_duty<8><1>>.
+    Found 1-bit register for signal <pwm_duty<8><0>>.
+    Found 1-bit register for signal <pwm_duty<9><15>>.
+    Found 1-bit register for signal <pwm_duty<9><14>>.
+    Found 1-bit register for signal <pwm_duty<9><13>>.
+    Found 1-bit register for signal <pwm_duty<9><12>>.
+    Found 1-bit register for signal <pwm_duty<9><11>>.
+    Found 1-bit register for signal <pwm_duty<9><10>>.
+    Found 1-bit register for signal <pwm_duty<9><9>>.
+    Found 1-bit register for signal <pwm_duty<9><8>>.
+    Found 1-bit register for signal <pwm_duty<9><7>>.
+    Found 1-bit register for signal <pwm_duty<9><6>>.
+    Found 1-bit register for signal <pwm_duty<9><5>>.
+    Found 1-bit register for signal <pwm_duty<9><4>>.
+    Found 1-bit register for signal <pwm_duty<9><3>>.
+    Found 1-bit register for signal <pwm_duty<9><2>>.
+    Found 1-bit register for signal <pwm_duty<9><1>>.
+    Found 1-bit register for signal <pwm_duty<9><0>>.
+    Found 1-bit register for signal <pwm_duty<10><15>>.
+    Found 1-bit register for signal <pwm_duty<10><14>>.
+    Found 1-bit register for signal <pwm_duty<10><13>>.
+    Found 1-bit register for signal <pwm_duty<10><12>>.
+    Found 1-bit register for signal <pwm_duty<10><11>>.
+    Found 1-bit register for signal <pwm_duty<10><10>>.
+    Found 1-bit register for signal <pwm_duty<10><9>>.
+    Found 1-bit register for signal <pwm_duty<10><8>>.
+    Found 1-bit register for signal <pwm_duty<10><7>>.
+    Found 1-bit register for signal <pwm_duty<10><6>>.
+    Found 1-bit register for signal <pwm_duty<10><5>>.
+    Found 1-bit register for signal <pwm_duty<10><4>>.
+    Found 1-bit register for signal <pwm_duty<10><3>>.
+    Found 1-bit register for signal <pwm_duty<10><2>>.
+    Found 1-bit register for signal <pwm_duty<10><1>>.
+    Found 1-bit register for signal <pwm_duty<10><0>>.
+    Found 1-bit register for signal <pwm_duty<11><15>>.
+    Found 1-bit register for signal <pwm_duty<11><14>>.
+    Found 1-bit register for signal <pwm_duty<11><13>>.
+    Found 1-bit register for signal <pwm_duty<11><12>>.
+    Found 1-bit register for signal <pwm_duty<11><11>>.
+    Found 1-bit register for signal <pwm_duty<11><10>>.
+    Found 1-bit register for signal <pwm_duty<11><9>>.
+    Found 1-bit register for signal <pwm_duty<11><8>>.
+    Found 1-bit register for signal <pwm_duty<11><7>>.
+    Found 1-bit register for signal <pwm_duty<11><6>>.
+    Found 1-bit register for signal <pwm_duty<11><5>>.
+    Found 1-bit register for signal <pwm_duty<11><4>>.
+    Found 1-bit register for signal <pwm_duty<11><3>>.
+    Found 1-bit register for signal <pwm_duty<11><2>>.
+    Found 1-bit register for signal <pwm_duty<11><1>>.
+    Found 1-bit register for signal <pwm_duty<11><0>>.
+    Found 1-bit register for signal <pwm_duty<12><15>>.
+    Found 1-bit register for signal <pwm_duty<12><14>>.
+    Found 1-bit register for signal <pwm_duty<12><13>>.
+    Found 1-bit register for signal <pwm_duty<12><12>>.
+    Found 1-bit register for signal <pwm_duty<12><11>>.
+    Found 1-bit register for signal <pwm_duty<12><10>>.
+    Found 1-bit register for signal <pwm_duty<12><9>>.
+    Found 1-bit register for signal <pwm_duty<12><8>>.
+    Found 1-bit register for signal <pwm_duty<12><7>>.
+    Found 1-bit register for signal <pwm_duty<12><6>>.
+    Found 1-bit register for signal <pwm_duty<12><5>>.
+    Found 1-bit register for signal <pwm_duty<12><4>>.
+    Found 1-bit register for signal <pwm_duty<12><3>>.
+    Found 1-bit register for signal <pwm_duty<12><2>>.
+    Found 1-bit register for signal <pwm_duty<12><1>>.
+    Found 1-bit register for signal <pwm_duty<12><0>>.
+    Found 1-bit register for signal <pwm_duty<13><15>>.
+    Found 1-bit register for signal <pwm_duty<13><14>>.
+    Found 1-bit register for signal <pwm_duty<13><13>>.
+    Found 1-bit register for signal <pwm_duty<13><12>>.
+    Found 1-bit register for signal <pwm_duty<13><11>>.
+    Found 1-bit register for signal <pwm_duty<13><10>>.
+    Found 1-bit register for signal <pwm_duty<13><9>>.
+    Found 1-bit register for signal <pwm_duty<13><8>>.
+    Found 1-bit register for signal <pwm_duty<13><7>>.
+    Found 1-bit register for signal <pwm_duty<13><6>>.
+    Found 1-bit register for signal <pwm_duty<13><5>>.
+    Found 1-bit register for signal <pwm_duty<13><4>>.
+    Found 1-bit register for signal <pwm_duty<13><3>>.
+    Found 1-bit register for signal <pwm_duty<13><2>>.
+    Found 1-bit register for signal <pwm_duty<13><1>>.
+    Found 1-bit register for signal <pwm_duty<13><0>>.
+    Found 1-bit register for signal <pwm_duty<14><15>>.
+    Found 1-bit register for signal <pwm_duty<14><14>>.
+    Found 1-bit register for signal <pwm_duty<14><13>>.
+    Found 1-bit register for signal <pwm_duty<14><12>>.
+    Found 1-bit register for signal <pwm_duty<14><11>>.
+    Found 1-bit register for signal <pwm_duty<14><10>>.
+    Found 1-bit register for signal <pwm_duty<14><9>>.
+    Found 1-bit register for signal <pwm_duty<14><8>>.
+    Found 1-bit register for signal <pwm_duty<14><7>>.
+    Found 1-bit register for signal <pwm_duty<14><6>>.
+    Found 1-bit register for signal <pwm_duty<14><5>>.
+    Found 1-bit register for signal <pwm_duty<14><4>>.
+    Found 1-bit register for signal <pwm_duty<14><3>>.
+    Found 1-bit register for signal <pwm_duty<14><2>>.
+    Found 1-bit register for signal <pwm_duty<14><1>>.
+    Found 1-bit register for signal <pwm_duty<14><0>>.
+    Found 1-bit register for signal <pwm_duty<15><15>>.
+    Found 1-bit register for signal <pwm_duty<15><14>>.
+    Found 1-bit register for signal <pwm_duty<15><13>>.
+    Found 1-bit register for signal <pwm_duty<15><12>>.
+    Found 1-bit register for signal <pwm_duty<15><11>>.
+    Found 1-bit register for signal <pwm_duty<15><10>>.
+    Found 1-bit register for signal <pwm_duty<15><9>>.
+    Found 1-bit register for signal <pwm_duty<15><8>>.
+    Found 1-bit register for signal <pwm_duty<15><7>>.
+    Found 1-bit register for signal <pwm_duty<15><6>>.
+    Found 1-bit register for signal <pwm_duty<15><5>>.
+    Found 1-bit register for signal <pwm_duty<15><4>>.
+    Found 1-bit register for signal <pwm_duty<15><3>>.
+    Found 1-bit register for signal <pwm_duty<15><2>>.
+    Found 1-bit register for signal <pwm_duty<15><1>>.
+    Found 1-bit register for signal <pwm_duty<15><0>>.
+    Found 1-bit register for signal <core_clk_bank<0>>.
+    Found 16-bit register for signal <wb_dat_o>.
+    Found 1-bit 16-to-1 multiplexer for signal <core_prescaler[3]_core_clk[15]_Mux_0_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <core_prescaler[7]_core_clk[15]_Mux_1_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <core_prescaler[11]_core_clk[15]_Mux_2_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <core_prescaler[15]_core_clk[15]_Mux_3_o> created at line 99.
+    Found 1-bit tristate buffer for signal <gpio_io<0>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<1>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<2>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<3>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<4>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<5>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<6>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<7>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<8>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<9>> created at line 83
+    Found 1-bit tristate buffer for signal <gpio_io<10>> created at line 83
+    Summary:
+	inferred 389 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred  11 Tristate(s).
+Unit <wb_gpio> synthesized.
+
+Synthesizing Unit <core_clk>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/core_clk.v".
+        PRESCALER = 16
+    Found 16-bit register for signal <core_clk>.
+    Found 16-bit adder for signal <core_clk[15]_GND_37_o_add_0_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <core_clk> synthesized.
+
+Synthesizing Unit <pwm>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/pwm.v".
+        CORE_WIDTH = 4
+        PWM_COUNTER_WIDTH = 16
+WARNING:Xst:647 - Input <duty<64:64>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <counter>.
+    Found 16-bit adder for signal <counter[15]_GND_38_o_add_5_OUT> created at line 61.
+    Found 16-bit comparator greater for signal <pwm<0>> created at line 46
+    Found 16-bit comparator greater for signal <pwm<1>> created at line 46
+    Found 16-bit comparator greater for signal <pwm<2>> created at line 46
+    Found 16-bit comparator greater for signal <pwm<3>> created at line 46
+    Found 16-bit comparator greater for signal <period[15]_counter[15]_LessThan_5_o> created at line 58
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <pwm> synthesized.
+
+Synthesizing Unit <timer>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer.v".
+        CORE_WIDTH = 4
+        TIMER_COUNTER_WIDTH = 16
+    Found 1-bit register for signal <rTimer_input<1>>.
+    Found 1-bit register for signal <rTimer_input<0>>.
+    Found 1-bit register for signal <rTimer_input<5>>.
+    Found 1-bit register for signal <rTimer_input<4>>.
+    Found 1-bit register for signal <rTimer_input<3>>.
+    Found 1-bit register for signal <rTimer_input<8>>.
+    Found 1-bit register for signal <rTimer_input<7>>.
+    Found 1-bit register for signal <rTimer_input<6>>.
+    Found 1-bit register for signal <rTimer_input<11>>.
+    Found 1-bit register for signal <rTimer_input<10>>.
+    Found 1-bit register for signal <rTimer_input<9>>.
+    Found 1-bit register for signal <rTimer_input<2>>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <timer> synthesized.
+
+Synthesizing Unit <timer_core>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer_core.v".
+        TIMER_COUNTER_WIDTH = 16
+    Found 16-bit register for signal <counter_result>.
+    Found 16-bit register for signal <counter>.
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <counter[15]_GND_40_o_add_0_OUT> created at line 52.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <timer_core> synthesized.
+
+Synthesizing Unit <mux_io>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/mux_io.v".
+        GPIO_WIDTH = 16
+    Summary:
+	no macro.
+Unit <mux_io> synthesized.
+
+Synthesizing Unit <single_mux>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/single_mux.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <single_mux> synthesized.
+
+Synthesizing Unit <wb_spi>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi/wb_spi.v".
+WARNING:Xst:647 - Input <wb_adr_i<15:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <spi_cs>.
+    Found 1-bit register for signal <spi_rst>.
+    Found 1-bit register for signal <start>.
+    Found 16-bit register for signal <wb_dat_o>.
+    Found 16-bit register for signal <divisor>.
+    Found 16-bit 4-to-1 multiplexer for signal <_n0059> created at line 73.
+    Summary:
+	inferred  35 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <wb_spi> synthesized.
+
+Synthesizing Unit <spi>.
+    Related source file is "/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi/spi.v".
+        IDLE = 2'b00
+        ACTIVE = 2'b01
+        LOAD = 2'b10
+    Found 5-bit register for signal <bitcount>.
+    Found 16-bit register for signal <prescaler>.
+    Found 16-bit register for signal <sreg>.
+    Found 16-bit register for signal <rx_register>.
+    Found 2-bit register for signal <state>.
+    Found 1-bit register for signal <sck>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (falling_edge)                             |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <prescaler[15]_GND_60_o_add_0_OUT> created at line 62.
+    Found 5-bit adder for signal <bitcount[4]_GND_60_o_add_3_OUT> created at line 75.
+    Found 16-bit comparator equal for signal <prescaler[15]_divisor[15]_equal_2_o> created at line 71
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <spi> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x16-bit single-port RAM                           : 1
+ 1024x8-bit dual-port RAM                              : 1
+# Adders/Subtractors                                   : 29
+ 11-bit adder                                          : 1
+ 16-bit adder                                          : 10
+ 24-bit adder                                          : 4
+ 24-bit subtractor                                     : 8
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 358
+ 1-bit register                                        : 290
+ 11-bit register                                       : 5
+ 14-bit register                                       : 1
+ 16-bit register                                       : 27
+ 2-bit register                                        : 1
+ 24-bit register                                       : 17
+ 26-bit register                                       : 1
+ 3-bit register                                        : 4
+ 4-bit register                                        : 1
+ 5-bit register                                        : 3
+ 64-bit register                                       : 1
+ 8-bit register                                        : 7
+# Comparators                                          : 42
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 20
+ 24-bit comparator equal                               : 8
+ 24-bit comparator lessequal                           : 8
+ 4-bit comparator lessequal                            : 1
+ 8-bit comparator greater                              : 4
+# Multiplexers                                         : 83
+ 1-bit 16-to-1 multiplexer                             : 4
+ 1-bit 2-to-1 multiplexer                              : 44
+ 1-bit 4-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 14
+ 16-bit 4-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 14
+ 5-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 19
+ 1-bit tristate buffer                                 : 19
+# FSMs                                                 : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <pwm_stage[3].pwm0> is unconnected in block <gpio0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[11].mux0> is unconnected in block <mux_out>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[12].mux0> is unconnected in block <mux_out>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[13].mux0> is unconnected in block <mux_out>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[14].mux0> is unconnected in block <mux_out>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[15].mux0> is unconnected in block <mux_out>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[4].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[5].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[6].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[7].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[8].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[9].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[10].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[11].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[12].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[13].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[14].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <gpio_selector[15].mux0> is unconnected in block <mux_in>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <SSELr_2> of sequential type is unconnected in block <spi0>.
+WARNING:Xst:2677 - Node <core_prescaler_12> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <core_prescaler_13> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <core_prescaler_14> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <core_prescaler_15> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <timer_conf_8> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <timer_conf_9> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <timer_conf_10> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <timer_conf_11> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <timer_conf_12> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <timer_conf_13> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <timer_conf_14> of sequential type is unconnected in block <gpio0>.
+WARNING:Xst:2677 - Node <timer_conf_15> of sequential type is unconnected in block <gpio0>.
+
+Synthesizing (advanced) Unit <core_clk>.
+The following registers are absorbed into counter <core_clk>: 1 register on signal <core_clk>.
+Unit <core_clk> synthesized (advanced).
+
+Synthesizing (advanced) Unit <everloop>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+The following registers are absorbed into counter <data_cnt>: 1 register on signal <data_cnt>.
+Unit <everloop> synthesized (advanced).
+
+Synthesizing (advanced) Unit <everloop_ram>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <dat_b>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk_a>         | rise     |
+    |     weA            | connected to signal <we_a_0>        | high     |
+    |     addrA          | connected to signal <adr_a>         |          |
+    |     diA            | connected to signal <dat_a>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk_b>         | rise     |
+    |     addrB          | connected to signal <adr_b>         |          |
+    |     doB            | connected to signal <dat_b>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+Unit <everloop_ram> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pwm>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <pwm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pwm_motor>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <pwm_motor> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spi>.
+The following registers are absorbed into counter <bitcount>: 1 register on signal <bitcount>.
+Unit <spi> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spi2ad_bus>.
+The following registers are absorbed into counter <bit_count>: 1 register on signal <bit_count>.
+Unit <spi2ad_bus> synthesized (advanced).
+
+Synthesizing (advanced) Unit <system>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <system> synthesized (advanced).
+
+Synthesizing (advanced) Unit <timer_core>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <timer_core> synthesized (advanced).
+
+Synthesizing (advanced) Unit <wb_bram>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <wb_dat_o>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk_i>         | rise     |
+    |     weA            | connected to signal <ram0we>        | high     |
+    |     addrA          | connected to signal <wb_adr_i>      |          |
+    |     diA            | connected to signal <wb_dat_i>      |          |
+    |     doA            | connected to signal <wb_dat_o>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+Unit <wb_bram> synthesized (advanced).
+
+Synthesizing (advanced) Unit <wb_everloop>.
+The following registers are absorbed into counter <adr_b>: 1 register on signal <adr_b>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+Unit <wb_everloop> synthesized (advanced).
+WARNING:Xst:2677 - Node <SSELr_2> of sequential type is unconnected in block <spi2ad_bus>.
+WARNING:Xst:2677 - Node <timer_conf_8> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <timer_conf_9> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <timer_conf_10> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <timer_conf_11> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <timer_conf_12> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <timer_conf_13> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <timer_conf_14> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <timer_conf_15> of sequential type is unconnected in block <wb_gpio>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x16-bit single-port block RAM                     : 1
+ 1024x8-bit dual-port block RAM                        : 1
+# Adders/Subtractors                                   : 9
+ 16-bit adder                                          : 1
+ 24-bit subtractor                                     : 8
+# Counters                                             : 20
+ 11-bit up counter                                     : 1
+ 16-bit up counter                                     : 9
+ 24-bit up counter                                     : 4
+ 26-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 1043
+ Flip-Flops                                            : 1043
+# Comparators                                          : 42
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 20
+ 24-bit comparator equal                               : 8
+ 24-bit comparator lessequal                           : 8
+ 4-bit comparator lessequal                            : 1
+ 8-bit comparator greater                              : 4
+# Multiplexers                                         : 42
+ 1-bit 16-to-1 multiplexer                             : 4
+ 1-bit 2-to-1 multiplexer                              : 12
+ 1-bit 4-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 6
+ 16-bit 4-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 14
+ 64-bit 2-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <core_prescaler_12> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <core_prescaler_13> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <core_prescaler_14> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <core_prescaler_15> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_15> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_14> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_11> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_13> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_12> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_10> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_9> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_8> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_7> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_6> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_5> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_4> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_3> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_2> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_1> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_11_0> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_15> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_14> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_13> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_10> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_12> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_11> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_9> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_8> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_7> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_6> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_5> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_4> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_3> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_2> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_1> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_12_0> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_15> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_14> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_13> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_12> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_9> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_11> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_10> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_8> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_7> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_6> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_5> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_4> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_3> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_0> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_2> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_13_1> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_15> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_14> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_13> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_12> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_11> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_10> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_7> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_9> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_8> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_6> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_5> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_4> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_3> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_2> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_1> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_14_0> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_15> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_14> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_13> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_12> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_11> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_10> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_9> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_6> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_8> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_7> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_5> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_4> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_3> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_2> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_1> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_duty_15_0> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <core_clk_bank_3> of sequential type is unconnected in block <wb_gpio>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <conbus0/FSM_0> on signal <state[1:3]> with gray encoding.
+---------------------
+ State   | Encoding
+---------------------
+ 0000001 | 000
+ 0000010 | 001
+ 0000100 | 011
+ 0001000 | 010
+ 0010000 | 110
+ 0100000 | 111
+ 1000000 | 101
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/FSM_1> on signal <state[1:2]> with sequential encoding.
+Optimizing FSM <gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/FSM_1> on signal <state[1:2]> with sequential encoding.
+Optimizing FSM <gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/FSM_1> on signal <state[1:2]> with sequential encoding.
+Optimizing FSM <gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/FSM_1> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <spi1/spi0/FSM_2> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 10    | 10
+ 01    | 01
+-------------------
+WARNING:Xst:1293 - FF/Latch <conbus_arb/state_FSM_FFd1> has a constant value of 0 in block <conbus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <conbus_arb/state_FSM_FFd3> has a constant value of 0 in block <conbus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <conbus_arb/state_FSM_FFd2> has a constant value of 0 in block <conbus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pwm_period_3_0> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_1> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_2> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_3> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_4> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_5> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_6> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_7> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_8> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_9> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_10> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_11> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_12> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_13> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_14> of sequential type is unconnected in block <wb_gpio>.
+WARNING:Xst:2677 - Node <pwm_period_3_15> of sequential type is unconnected in block <wb_gpio>.
+INFO:Xst:1901 - Instance ram in unit wb_mcu_bram of type RAMB16_S9_S18 has been replaced by RAMB16BWER
+
+Optimizing unit <system> ...
+
+Optimizing unit <spi2ad_bus> ...
+
+Optimizing unit <mcu_pwm_controller> ...
+
+Optimizing unit <pwm_motor> ...
+
+Optimizing unit <wb_everloop> ...
+
+Optimizing unit <everloop> ...
+
+Optimizing unit <timer> ...
+
+Optimizing unit <timer_core> ...
+
+Optimizing unit <wb_spi> ...
+
+Optimizing unit <spi> ...
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_0> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_0> <pwm_controller0/pwm2/counter_0> <pwm_controller0/pwm1/counter_0> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_1> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_1> <pwm_controller0/pwm2/counter_1> <pwm_controller0/pwm1/counter_1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/avail> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/avail> <pwm_controller0/pwm2/avail> <pwm_controller0/pwm1/avail> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_2> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_2> <pwm_controller0/pwm2/counter_2> <pwm_controller0/pwm1/counter_2> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_3> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_3> <pwm_controller0/pwm2/counter_3> <pwm_controller0/pwm1/counter_3> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_4> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_4> <pwm_controller0/pwm2/counter_4> <pwm_controller0/pwm1/counter_4> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_5> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_5> <pwm_controller0/pwm2/counter_5> <pwm_controller0/pwm1/counter_5> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_6> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_6> <pwm_controller0/pwm2/counter_6> <pwm_controller0/pwm1/counter_6> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_7> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_7> <pwm_controller0/pwm2/counter_7> <pwm_controller0/pwm1/counter_7> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_8> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_8> <pwm_controller0/pwm2/counter_8> <pwm_controller0/pwm1/counter_8> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_9> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_9> <pwm_controller0/pwm2/counter_9> <pwm_controller0/pwm1/counter_9> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_10> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_10> <pwm_controller0/pwm2/period_reg_10> <pwm_controller0/pwm1/period_reg_10> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_11> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_11> <pwm_controller0/pwm2/period_reg_11> <pwm_controller0/pwm1/period_reg_11> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_12> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_12> <pwm_controller0/pwm2/period_reg_12> <pwm_controller0/pwm1/period_reg_12> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_13> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_13> <pwm_controller0/pwm2/period_reg_13> <pwm_controller0/pwm1/period_reg_13> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_14> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_14> <pwm_controller0/pwm2/period_reg_14> <pwm_controller0/pwm1/period_reg_14> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_20> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_20> <pwm_controller0/pwm2/period_reg_20> <pwm_controller0/pwm1/period_reg_20> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_15> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_15> <pwm_controller0/pwm2/period_reg_15> <pwm_controller0/pwm1/period_reg_15> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_21> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_21> <pwm_controller0/pwm2/period_reg_21> <pwm_controller0/pwm1/period_reg_21> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_16> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_16> <pwm_controller0/pwm2/period_reg_16> <pwm_controller0/pwm1/period_reg_16> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_22> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_22> <pwm_controller0/pwm2/period_reg_22> <pwm_controller0/pwm1/period_reg_22> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_17> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_17> <pwm_controller0/pwm2/period_reg_17> <pwm_controller0/pwm1/period_reg_17> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_23> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_23> <pwm_controller0/pwm2/period_reg_23> <pwm_controller0/pwm1/period_reg_23> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_18> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_18> <pwm_controller0/pwm2/period_reg_18> <pwm_controller0/pwm1/period_reg_18> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_19> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_19> <pwm_controller0/pwm2/period_reg_19> <pwm_controller0/pwm1/period_reg_19> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_10> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_10> <pwm_controller0/pwm2/counter_10> <pwm_controller0/pwm1/counter_10> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_11> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_11> <pwm_controller0/pwm2/counter_11> <pwm_controller0/pwm1/counter_11> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_12> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_12> <pwm_controller0/pwm2/counter_12> <pwm_controller0/pwm1/counter_12> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_13> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_13> <pwm_controller0/pwm2/counter_13> <pwm_controller0/pwm1/counter_13> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_14> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_14> <pwm_controller0/pwm2/counter_14> <pwm_controller0/pwm1/counter_14> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_20> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_20> <pwm_controller0/pwm2/counter_20> <pwm_controller0/pwm1/counter_20> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_15> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_15> <pwm_controller0/pwm2/counter_15> <pwm_controller0/pwm1/counter_15> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_21> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_21> <pwm_controller0/pwm2/counter_21> <pwm_controller0/pwm1/counter_21> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_16> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_16> <pwm_controller0/pwm2/counter_16> <pwm_controller0/pwm1/counter_16> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_22> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_22> <pwm_controller0/pwm2/counter_22> <pwm_controller0/pwm1/counter_22> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_17> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_17> <pwm_controller0/pwm2/counter_17> <pwm_controller0/pwm1/counter_17> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_23> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_23> <pwm_controller0/pwm2/counter_23> <pwm_controller0/pwm1/counter_23> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_18> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_18> <pwm_controller0/pwm2/counter_18> <pwm_controller0/pwm1/counter_18> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/counter_19> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/counter_19> <pwm_controller0/pwm2/counter_19> <pwm_controller0/pwm1/counter_19> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_0> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_0> <pwm_controller0/pwm2/period_reg_0> <pwm_controller0/pwm1/period_reg_0> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_1> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_1> <pwm_controller0/pwm2/period_reg_1> <pwm_controller0/pwm1/period_reg_1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_2> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_2> <pwm_controller0/pwm2/period_reg_2> <pwm_controller0/pwm1/period_reg_2> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_3> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_3> <pwm_controller0/pwm2/period_reg_3> <pwm_controller0/pwm1/period_reg_3> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_4> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_4> <pwm_controller0/pwm2/period_reg_4> <pwm_controller0/pwm1/period_reg_4> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_5> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_5> <pwm_controller0/pwm2/period_reg_5> <pwm_controller0/pwm1/period_reg_5> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_6> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_6> <pwm_controller0/pwm2/period_reg_6> <pwm_controller0/pwm1/period_reg_6> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_7> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_7> <pwm_controller0/pwm2/period_reg_7> <pwm_controller0/pwm1/period_reg_7> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_8> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_8> <pwm_controller0/pwm2/period_reg_8> <pwm_controller0/pwm1/period_reg_8> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_9> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <pwm_controller0/pwm3/period_reg_9> <pwm_controller0/pwm2/period_reg_9> <pwm_controller0/pwm1/period_reg_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system, actual ratio is 86.
+Forward register balancing over carry chain pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>
+Forward register balancing over carry chain pwm_controller0/pwm3/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>
+Forward register balancing over carry chain pwm_controller0/pwm2/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>
+Forward register balancing over carry chain pwm_controller0/pwm1/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>
+Forward register balancing over carry chain pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>
+Forward register balancing over carry chain pwm_controller0/pwm3/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>
+Forward register balancing over carry chain pwm_controller0/pwm2/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>
+Forward register balancing over carry chain pwm_controller0/pwm1/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>
+Forward register balancing over carry chain pwm_controller0/pwm4/Mcount_counter_cy<0>
+Forward register balancing over carry chain everloop0/everloop0/Mcount_clk_cnt_cy<0>
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_0> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_0_BRB1> <pwm_controller0/pwm3/timeWork_reg_0_BRB1> <pwm_controller0/pwm2/timeWork_reg_0_BRB1> <pwm_controller0/pwm1/timeWork_reg_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_1> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_1_BRB1> <pwm_controller0/pwm3/timeWork_reg_1_BRB1> <pwm_controller0/pwm2/timeWork_reg_1_BRB1> <pwm_controller0/pwm1/timeWork_reg_1_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_2> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_2_BRB1> <pwm_controller0/pwm3/timeWork_reg_2_BRB1> <pwm_controller0/pwm2/timeWork_reg_2_BRB1> <pwm_controller0/pwm1/timeWork_reg_2_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_3> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_3_BRB1> <pwm_controller0/pwm3/timeWork_reg_3_BRB1> <pwm_controller0/pwm2/timeWork_reg_3_BRB1> <pwm_controller0/pwm1/timeWork_reg_3_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_4> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_4_BRB1> <pwm_controller0/pwm3/timeWork_reg_4_BRB1> <pwm_controller0/pwm2/timeWork_reg_4_BRB1> <pwm_controller0/pwm1/timeWork_reg_4_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_5> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_5_BRB1> <pwm_controller0/pwm3/timeWork_reg_5_BRB1> <pwm_controller0/pwm2/timeWork_reg_5_BRB1> <pwm_controller0/pwm1/timeWork_reg_5_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_6> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_6_BRB1> <pwm_controller0/pwm3/timeWork_reg_6_BRB1> <pwm_controller0/pwm2/timeWork_reg_6_BRB1> <pwm_controller0/pwm1/timeWork_reg_6_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_7> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_7_BRB1> <pwm_controller0/pwm3/timeWork_reg_7_BRB1> <pwm_controller0/pwm2/timeWork_reg_7_BRB1> <pwm_controller0/pwm1/timeWork_reg_7_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_8> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_8_BRB1> <pwm_controller0/pwm3/timeWork_reg_8_BRB1> <pwm_controller0/pwm2/timeWork_reg_8_BRB1> <pwm_controller0/pwm1/timeWork_reg_8_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_9> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_9_BRB1> <pwm_controller0/pwm3/timeWork_reg_9_BRB1> <pwm_controller0/pwm2/timeWork_reg_9_BRB1> <pwm_controller0/pwm1/timeWork_reg_9_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_10> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_10_BRB1> <pwm_controller0/pwm3/timeWork_reg_10_BRB1> <pwm_controller0/pwm2/timeWork_reg_10_BRB1> <pwm_controller0/pwm1/timeWork_reg_10_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_11> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_11_BRB1> <pwm_controller0/pwm3/timeWork_reg_11_BRB1> <pwm_controller0/pwm2/timeWork_reg_11_BRB1> <pwm_controller0/pwm1/timeWork_reg_11_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_12> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_12_BRB1> <pwm_controller0/pwm3/timeWork_reg_12_BRB1> <pwm_controller0/pwm2/timeWork_reg_12_BRB1> <pwm_controller0/pwm1/timeWork_reg_12_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_13> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_13_BRB1> <pwm_controller0/pwm3/timeWork_reg_13_BRB1> <pwm_controller0/pwm2/timeWork_reg_13_BRB1> <pwm_controller0/pwm1/timeWork_reg_13_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_14> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_14_BRB1> <pwm_controller0/pwm3/timeWork_reg_14_BRB1> <pwm_controller0/pwm2/timeWork_reg_14_BRB1> <pwm_controller0/pwm1/timeWork_reg_14_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_15> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_15_BRB1> <pwm_controller0/pwm3/timeWork_reg_15_BRB1> <pwm_controller0/pwm2/timeWork_reg_15_BRB1> <pwm_controller0/pwm1/timeWork_reg_15_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_20> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_20_BRB1> <pwm_controller0/pwm3/timeWork_reg_20_BRB1> <pwm_controller0/pwm2/timeWork_reg_20_BRB1> <pwm_controller0/pwm1/timeWork_reg_20_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_16> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_16_BRB1> <pwm_controller0/pwm3/timeWork_reg_16_BRB1> <pwm_controller0/pwm2/timeWork_reg_16_BRB1> <pwm_controller0/pwm1/timeWork_reg_16_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_21> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_21_BRB1> <pwm_controller0/pwm3/timeWork_reg_21_BRB1> <pwm_controller0/pwm2/timeWork_reg_21_BRB1> <pwm_controller0/pwm1/timeWork_reg_21_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_17> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_17_BRB1> <pwm_controller0/pwm3/timeWork_reg_17_BRB1> <pwm_controller0/pwm2/timeWork_reg_17_BRB1> <pwm_controller0/pwm1/timeWork_reg_17_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_22> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_22_BRB1> <pwm_controller0/pwm3/timeWork_reg_22_BRB1> <pwm_controller0/pwm2/timeWork_reg_22_BRB1> <pwm_controller0/pwm1/timeWork_reg_22_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_18> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_18_BRB1> <pwm_controller0/pwm3/timeWork_reg_18_BRB1> <pwm_controller0/pwm2/timeWork_reg_18_BRB1> <pwm_controller0/pwm1/timeWork_reg_18_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_23> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_23_BRB1> <pwm_controller0/pwm3/timeWork_reg_23_BRB1> <pwm_controller0/pwm2/timeWork_reg_23_BRB1> <pwm_controller0/pwm1/timeWork_reg_23_BRB1> 
+INFO:Xst:2261 - The FF/Latch <pwm_controller0/pwm4/period_reg_19> in Unit <system> is equivalent to the following 4 FFs/Latches, which will be removed : <pwm_controller0/pwm4/timeWork_reg_19_BRB1> <pwm_controller0/pwm3/timeWork_reg_19_BRB1> <pwm_controller0/pwm2/timeWork_reg_19_BRB1> <pwm_controller0/pwm1/timeWork_reg_19_BRB1> 
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <system> :
+	Register(s) spi0/bit_count_0 spi0/bit_count_1 spi0/bit_count_3 spi0/bit_count_2 has(ve) been forward balanced into : spi0/GND_8_o_auto_inc_AND_97_o11_FRB.
+	Register(s) gpio0/timer_stage[0].timer0/rTimer_input_0 has(ve) been backward balanced into : gpio0/timer_stage[0].timer0/rTimer_input_0_BRB0 gpio0/timer_stage[0].timer0/rTimer_input_0_BRB1 gpio0/timer_stage[0].timer0/rTimer_input_0_BRB2.
+	Register(s) gpio0/timer_stage[0].timer0/rTimer_input_3 has(ve) been backward balanced into : gpio0/timer_stage[0].timer0/rTimer_input_3_BRB0 gpio0/timer_stage[0].timer0/rTimer_input_3_BRB1 gpio0/timer_stage[0].timer0/rTimer_input_3_BRB2.
+	Register(s) gpio0/timer_stage[0].timer0/rTimer_input_6 has(ve) been backward balanced into : gpio0/timer_stage[0].timer0/rTimer_input_6_BRB0 gpio0/timer_stage[0].timer0/rTimer_input_6_BRB1 gpio0/timer_stage[0].timer0/rTimer_input_6_BRB2.
+	Register(s) gpio0/timer_stage[0].timer0/rTimer_input_9 has(ve) been backward balanced into : gpio0/timer_stage[0].timer0/rTimer_input_9_BRB0 gpio0/timer_stage[0].timer0/rTimer_input_9_BRB1 gpio0/timer_stage[0].timer0/rTimer_input_9_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_0 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_0_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_1 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_1_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_10 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_10_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_11 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_11_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_12 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_12_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_13 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_13_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_14 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_14_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_15 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_15_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_16 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_16_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_17 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_17_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_18 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_18_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_19 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_19_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_2 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_2_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_20 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_20_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_21 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_21_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_22 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_22_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_23 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_23_BRB0 pwm_controller0/pwm1/timeWork_reg_23_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_3 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_3_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_4 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_4_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_5 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_5_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_6 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_6_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_7 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_7_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_8 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_8_BRB2.
+	Register(s) pwm_controller0/pwm1/timeWork_reg_9 has(ve) been backward balanced into : pwm_controller0/pwm1/timeWork_reg_9_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_0 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_0_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_1 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_1_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_10 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_10_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_11 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_11_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_12 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_12_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_13 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_13_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_14 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_14_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_15 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_15_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_16 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_16_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_17 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_17_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_18 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_18_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_19 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_19_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_2 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_2_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_20 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_20_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_21 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_21_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_22 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_22_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_23 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_23_BRB0 pwm_controller0/pwm2/timeWork_reg_23_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_3 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_3_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_4 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_4_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_5 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_5_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_6 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_6_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_7 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_7_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_8 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_8_BRB2.
+	Register(s) pwm_controller0/pwm2/timeWork_reg_9 has(ve) been backward balanced into : pwm_controller0/pwm2/timeWork_reg_9_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_0 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_0_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_1 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_1_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_10 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_10_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_11 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_11_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_12 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_12_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_13 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_13_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_14 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_14_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_15 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_15_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_16 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_16_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_17 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_17_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_18 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_18_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_19 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_19_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_2 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_2_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_20 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_20_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_21 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_21_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_22 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_22_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_23 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_23_BRB0 pwm_controller0/pwm3/timeWork_reg_23_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_3 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_3_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_4 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_4_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_5 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_5_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_6 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_6_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_7 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_7_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_8 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_8_BRB2.
+	Register(s) pwm_controller0/pwm3/timeWork_reg_9 has(ve) been backward balanced into : pwm_controller0/pwm3/timeWork_reg_9_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_0 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_0_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_1 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_1_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_10 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_10_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_11 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_11_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_12 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_12_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_13 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_13_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_14 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_14_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_15 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_15_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_16 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_16_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_17 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_17_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_18 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_18_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_19 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_19_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_2 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_2_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_20 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_20_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_21 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_21_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_22 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_22_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_23 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_23_BRB0 pwm_controller0/pwm4/timeWork_reg_23_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_3 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_3_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_4 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_4_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_5 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_5_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_6 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_6_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_7 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_7_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_8 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_8_BRB2.
+	Register(s) pwm_controller0/pwm4/timeWork_reg_9 has(ve) been backward balanced into : pwm_controller0/pwm4/timeWork_reg_9_BRB2.
+Unit <system> processed.
+FlipFlop spi1/spi_cs has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop spi1/spi0/sck has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop spi1/spi_rst has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_controller0/pwm1/PWM_out has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_controller0/pwm2/PWM_out has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_controller0/pwm3/PWM_out has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop pwm_controller0/pwm4/PWM_out has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop counter_25 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <system> :
+	Found 2-bit shift register for signal <everloop0/swr_1>.
+Unit <system> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1334
+ Flip-Flops                                            : 1334
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2361
+#      GND                         : 1
+#      INV                         : 22
+#      LUT1                        : 103
+#      LUT2                        : 84
+#      LUT3                        : 270
+#      LUT4                        : 571
+#      LUT5                        : 73
+#      LUT6                        : 211
+#      MUXCY                       : 611
+#      MUXF7                       : 6
+#      MUXF8                       : 3
+#      VCC                         : 1
+#      XORCY                       : 405
+# FlipFlops/Latches                : 1335
+#      FD                          : 68
+#      FD_1                        : 51
+#      FDC                         : 98
+#      FDC_1                       : 2
+#      FDCE                        : 362
+#      FDCE_1                      : 64
+#      FDE                         : 299
+#      FDE_1                       : 216
+#      FDR                         : 44
+#      FDRE                        : 128
+#      FDS                         : 1
+#      FDSE                        : 2
+# RAMS                             : 3
+#      RAMB16BWER                  : 2
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 63
+#      IBUF                        : 25
+#      IBUFG                       : 1
+#      IOBUF                       : 19
+#      OBUF                        : 18
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1315  out of   4800    27%  
+ Number of Slice LUTs:                 1335  out of   2400    55%  
+    Number used as Logic:              1334  out of   2400    55%  
+    Number used as Memory:                1  out of   1200     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1889
+   Number with an unused Flip Flop:     574  out of   1889    30%  
+   Number with an unused LUT:           554  out of   1889    29%  
+   Number of fully used LUT-FF pairs:   761  out of   1889    40%  
+   Number of unique control sets:        58
+
+IO Utilization: 
+ Number of IOs:                          63
+ Number of bonded IOBs:                  63  out of    102    61%  
+    IOB Flip Flops/Latches:              20
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                3  out of     12    25%  
+    Number using Block RAM only:          3
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------------+-------+
+clk_50                             | DCM_SP:CLKFX                            | 1196  |
+clk_50                             | DCM_SP:CLKFX180                         | 32    |
+gpio0/core_clk_bank_1              | NONE(gpio0/pwm_stage[1].pwm0/counter_15)| 16    |
+gpio0/core_clk_bank_2              | NONE(gpio0/pwm_stage[2].pwm0/counter_15)| 16    |
+gpio0/core_clk_bank_0              | BUFG                                    | 80    |
+-----------------------------------+-----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 33.908ns (Maximum Frequency: 29.492MHz)
+   Minimum input arrival time before clock: 7.610ns
+   Maximum output required time after clock: 8.196ns
+   Maximum combinational path delay: 6.328ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50'
+  Clock period: 33.908ns (frequency: 29.492MHz)
+  Total number of paths / destination ports: 33988 / 2373
+-------------------------------------------------------------------------
+Delay:               4.239ns (Levels of Logic = 26)
+  Source:            pwm_controller0/pwm_wdBus_0 (FF)
+  Destination:       N73_FRB (FF)
+  Source Clock:      clk_50 rising 4.0X
+  Destination Clock: clk_50 falling 4.0X
+
+  Data Path: pwm_controller0/pwm_wdBus_0 to N73_FRB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              23   0.525   1.358  pwm_controller0/pwm_wdBus_0 (pwm_controller0/pwm_wdBus_0)
+     LUT3:I2->O            5   0.254   0.841  pwm_controller0/Mmux__n0250161 (pwm_controller0/_n0250<23>)
+     LUT1:I0->O            1   0.254   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>_rt (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>_rt)
+     MUXCY:S->O            1   0.215   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<1> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<2> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<3> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<4> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<5> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<6> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<7> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<8> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<9> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<10> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<11> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<12> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<13> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<14> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<15> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<16> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<17> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<18> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<19> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<20> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<21> (pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<21>)
+     MUXCY:CI->O           0   0.023   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_cy<22> (N173)
+     XORCY:CI->O           1   0.206   0.000  pwm_controller0/pwm4/Msub_period_reg[23]_GND_10_o_sub_20_OUT_xor<23> (N174)
+     FDE_1:D                   0.074          N73_FRB
+    ----------------------------------------
+    Total                      4.239ns (2.040ns logic, 2.199ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'gpio0/core_clk_bank_1'
+  Clock period: 4.859ns (frequency: 205.793MHz)
+  Total number of paths / destination ports: 5000 / 16
+-------------------------------------------------------------------------
+Delay:               4.859ns (Levels of Logic = 26)
+  Source:            gpio0/pwm_stage[1].pwm0/counter_0 (FF)
+  Destination:       gpio0/pwm_stage[1].pwm0/counter_15 (FF)
+  Source Clock:      gpio0/core_clk_bank_1 rising
+  Destination Clock: gpio0/core_clk_bank_1 rising
+
+  Data Path: gpio0/pwm_stage[1].pwm0/counter_0 to gpio0/pwm_stage[1].pwm0/counter_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.525   1.315  gpio0/pwm_stage[1].pwm0/counter_0 (gpio0/pwm_stage[1].pwm0/counter_0)
+     LUT4:I0->O            1   0.254   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_lut<0> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<0> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<1> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<2> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<3> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<4> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<5> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<6> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<6>)
+     MUXCY:CI->O          17   0.023   1.317  gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<7> (gpio0/pwm_stage[1].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<7>)
+     LUT2:I0->O            1   0.250   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_lut<0> (gpio0/pwm_stage[1].pwm0/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<0> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<1> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<2> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<3> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<4> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<5> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<6> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<7> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<8> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<9> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<10> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<11> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<12> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<13> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<14> (gpio0/pwm_stage[1].pwm0/Mcount_counter_cy<14>)
+     XORCY:CI->O           1   0.206   0.000  gpio0/pwm_stage[1].pwm0/Mcount_counter_xor<15> (gpio0/pwm_stage[1].pwm0/Mcount_counter15)
+     FDC:D                     0.074          gpio0/pwm_stage[1].pwm0/counter_15
+    ----------------------------------------
+    Total                      4.859ns (2.227ns logic, 2.632ns route)
+                                       (45.8% logic, 54.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'gpio0/core_clk_bank_2'
+  Clock period: 4.796ns (frequency: 208.496MHz)
+  Total number of paths / destination ports: 5000 / 16
+-------------------------------------------------------------------------
+Delay:               4.796ns (Levels of Logic = 26)
+  Source:            gpio0/pwm_stage[2].pwm0/counter_0 (FF)
+  Destination:       gpio0/pwm_stage[2].pwm0/counter_15 (FF)
+  Source Clock:      gpio0/core_clk_bank_2 rising
+  Destination Clock: gpio0/core_clk_bank_2 rising
+
+  Data Path: gpio0/pwm_stage[2].pwm0/counter_0 to gpio0/pwm_stage[2].pwm0/counter_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   1.252  gpio0/pwm_stage[2].pwm0/counter_0 (gpio0/pwm_stage[2].pwm0/counter_0)
+     LUT4:I0->O            1   0.254   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_lut<0> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<0> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<1> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<2> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<3> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<4> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<5> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<6> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<6>)
+     MUXCY:CI->O          17   0.023   1.317  gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<7> (gpio0/pwm_stage[2].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<7>)
+     LUT2:I0->O            1   0.250   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_lut<0> (gpio0/pwm_stage[2].pwm0/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<0> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<1> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<2> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<3> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<4> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<5> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<6> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<7> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<8> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<9> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<10> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<11> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<12> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<13> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<14> (gpio0/pwm_stage[2].pwm0/Mcount_counter_cy<14>)
+     XORCY:CI->O           1   0.206   0.000  gpio0/pwm_stage[2].pwm0/Mcount_counter_xor<15> (gpio0/pwm_stage[2].pwm0/Mcount_counter15)
+     FDC:D                     0.074          gpio0/pwm_stage[2].pwm0/counter_15
+    ----------------------------------------
+    Total                      4.796ns (2.227ns logic, 2.569ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'gpio0/core_clk_bank_0'
+  Clock period: 4.796ns (frequency: 208.496MHz)
+  Total number of paths / destination ports: 5544 / 80
+-------------------------------------------------------------------------
+Delay:               4.796ns (Levels of Logic = 26)
+  Source:            gpio0/pwm_stage[0].pwm0/counter_0 (FF)
+  Destination:       gpio0/pwm_stage[0].pwm0/counter_15 (FF)
+  Source Clock:      gpio0/core_clk_bank_0 rising
+  Destination Clock: gpio0/core_clk_bank_0 rising
+
+  Data Path: gpio0/pwm_stage[0].pwm0/counter_0 to gpio0/pwm_stage[0].pwm0/counter_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   1.252  gpio0/pwm_stage[0].pwm0/counter_0 (gpio0/pwm_stage[0].pwm0/counter_0)
+     LUT4:I0->O            1   0.254   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_lut<0> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<0> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<1> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<2> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<3> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<4> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<5> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<6> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<6>)
+     MUXCY:CI->O          17   0.023   1.317  gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<7> (gpio0/pwm_stage[0].pwm0/Mcompar_period[15]_counter[15]_LessThan_5_o_cy<7>)
+     LUT2:I0->O            1   0.250   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_lut<0> (gpio0/pwm_stage[0].pwm0/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<0> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<1> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<2> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<3> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<4> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<5> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<6> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<7> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<8> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<9> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<10> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<11> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<12> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<13> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<14> (gpio0/pwm_stage[0].pwm0/Mcount_counter_cy<14>)
+     XORCY:CI->O           1   0.206   0.000  gpio0/pwm_stage[0].pwm0/Mcount_counter_xor<15> (gpio0/pwm_stage[0].pwm0/Mcount_counter15)
+     FDC:D                     0.074          gpio0/pwm_stage[0].pwm0/counter_15
+    ----------------------------------------
+    Total                      4.796ns (2.227ns logic, 2.569ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_50'
+  Total number of paths / destination ports: 613 / 611
+-------------------------------------------------------------------------
+Offset:              7.610ns (Levels of Logic = 3)
+  Source:            resetn (PAD)
+  Destination:       spi1/wb_dat_o_15 (FF)
+  Destination Clock: clk_50 rising 4.0X
+
+  Data Path: resetn to spi1/wb_dat_o_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           551   1.328   2.925  resetn_IBUF (resetn_IBUF)
+     LUT6:I0->O           17   0.254   1.209  spi1/_n0066<3>21 (spi1/_n0066<3>2)
+     LUT3:I2->O           16   0.254   1.181  spi1/_n0066<3>1 (spi1/_n0066)
+     FDRE:R                    0.459          spi1/wb_dat_o_0
+    ----------------------------------------
+    Total                      7.610ns (2.295ns logic, 5.315ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'gpio0/core_clk_bank_1'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.256ns (Levels of Logic = 1)
+  Source:            resetn (PAD)
+  Destination:       gpio0/pwm_stage[1].pwm0/counter_15 (FF)
+  Destination Clock: gpio0/core_clk_bank_1 rising
+
+  Data Path: resetn to gpio0/pwm_stage[1].pwm0/counter_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           551   1.328   2.469  resetn_IBUF (resetn_IBUF)
+     FDC:CLR                   0.459          gpio0/pwm_stage[1].pwm0/counter_0
+    ----------------------------------------
+    Total                      4.256ns (1.787ns logic, 2.469ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'gpio0/core_clk_bank_2'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.256ns (Levels of Logic = 1)
+  Source:            resetn (PAD)
+  Destination:       gpio0/pwm_stage[2].pwm0/counter_15 (FF)
+  Destination Clock: gpio0/core_clk_bank_2 rising
+
+  Data Path: resetn to gpio0/pwm_stage[2].pwm0/counter_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           551   1.328   2.469  resetn_IBUF (resetn_IBUF)
+     FDC:CLR                   0.459          gpio0/pwm_stage[2].pwm0/counter_0
+    ----------------------------------------
+    Total                      4.256ns (1.787ns logic, 2.469ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'gpio0/core_clk_bank_0'
+  Total number of paths / destination ports: 80 / 80
+-------------------------------------------------------------------------
+Offset:              4.256ns (Levels of Logic = 1)
+  Source:            resetn (PAD)
+  Destination:       gpio0/pwm_stage[0].pwm0/counter_15 (FF)
+  Destination Clock: gpio0/core_clk_bank_0 rising
+
+  Data Path: resetn to gpio0/pwm_stage[0].pwm0/counter_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           551   1.328   2.469  resetn_IBUF (resetn_IBUF)
+     FDC:CLR                   0.459          gpio0/pwm_stage[0].pwm0/counter_0
+    ----------------------------------------
+    Total                      4.256ns (1.787ns logic, 2.469ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50'
+  Total number of paths / destination ports: 363 / 30
+-------------------------------------------------------------------------
+Offset:              7.917ns (Levels of Logic = 11)
+  Source:            gpio0/pwm_duty_10_0 (FF)
+  Destination:       gpio_io<10> (PAD)
+  Source Clock:      clk_50 rising 4.0X
+
+  Data Path: gpio0/pwm_duty_10_0 to gpio_io<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.525   1.002  gpio0/pwm_duty_10_0 (gpio0/pwm_duty_10_0)
+     LUT4:I0->O            1   0.254   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_lut<0> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<0> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<1> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<2> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<3> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<4> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<5> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<5>)
+     MUXCY:CI->O           1   0.235   0.790  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<6> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<6>)
+     LUT5:I3->O            1   0.250   0.682  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<7> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<2>_cy<7>)
+     LUT4:I3->O            1   0.254   0.681  gpio0/mux_out/gpio_selector[10].mux0/Mmux_mux_output11 (gpio_io_10_IOBUF)
+     IOBUF:I->IO               2.912          gpio_io_10_IOBUF (gpio_io<10>)
+    ----------------------------------------
+    Total                      7.917ns (4.762ns logic, 3.155ns route)
+                                       (60.1% logic, 39.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'gpio0/core_clk_bank_2'
+  Total number of paths / destination ports: 90 / 3
+-------------------------------------------------------------------------
+Offset:              8.133ns (Levels of Logic = 11)
+  Source:            gpio0/pwm_stage[2].pwm0/counter_1 (FF)
+  Destination:       gpio_io<10> (PAD)
+  Source Clock:      gpio0/core_clk_bank_2 rising
+
+  Data Path: gpio0/pwm_stage[2].pwm0/counter_1 to gpio_io<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   1.252  gpio0/pwm_stage[2].pwm0/counter_1 (gpio0/pwm_stage[2].pwm0/counter_1)
+     LUT4:I0->O            0   0.254   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_lutdi (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<0> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<1> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<2> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<3> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<4> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<5> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<5>)
+     MUXCY:CI->O           1   0.235   0.790  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<6> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<6>)
+     LUT5:I3->O            1   0.250   0.682  gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<7> (gpio0/pwm_stage[2].pwm0/Mcompar_pwm<1>_cy<7>)
+     LUT4:I3->O            1   0.254   0.681  gpio0/mux_out/gpio_selector[9].mux0/Mmux_mux_output11 (gpio_io_9_IOBUF)
+     IOBUF:I->IO               2.912          gpio_io_9_IOBUF (gpio_io<9>)
+    ----------------------------------------
+    Total                      8.133ns (4.728ns logic, 3.405ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'gpio0/core_clk_bank_1'
+  Total number of paths / destination ports: 120 / 4
+-------------------------------------------------------------------------
+Offset:              8.196ns (Levels of Logic = 11)
+  Source:            gpio0/pwm_stage[1].pwm0/counter_1 (FF)
+  Destination:       gpio_io<7> (PAD)
+  Source Clock:      gpio0/core_clk_bank_1 rising
+
+  Data Path: gpio0/pwm_stage[1].pwm0/counter_1 to gpio_io<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.525   1.315  gpio0/pwm_stage[1].pwm0/counter_1 (gpio0/pwm_stage[1].pwm0/counter_1)
+     LUT4:I0->O            0   0.254   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_lutdi (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<0> (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<1> (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<2> (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<3> (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<4> (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<5> (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<5>)
+     MUXCY:CI->O           1   0.235   0.790  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<6> (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<6>)
+     LUT5:I3->O            1   0.250   0.682  gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<7> (gpio0/pwm_stage[1].pwm0/Mcompar_pwm<1>_cy<7>)
+     LUT4:I3->O            1   0.254   0.681  gpio0/mux_out/gpio_selector[5].mux0/Mmux_mux_output11 (gpio_io_5_IOBUF)
+     IOBUF:I->IO               2.912          gpio_io_5_IOBUF (gpio_io<5>)
+    ----------------------------------------
+    Total                      8.196ns (4.728ns logic, 3.468ns route)
+                                       (57.7% logic, 42.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'gpio0/core_clk_bank_0'
+  Total number of paths / destination ports: 90 / 3
+-------------------------------------------------------------------------
+Offset:              8.133ns (Levels of Logic = 11)
+  Source:            gpio0/pwm_stage[0].pwm0/counter_1 (FF)
+  Destination:       gpio_io<2> (PAD)
+  Source Clock:      gpio0/core_clk_bank_0 rising
+
+  Data Path: gpio0/pwm_stage[0].pwm0/counter_1 to gpio_io<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   1.252  gpio0/pwm_stage[0].pwm0/counter_1 (gpio0/pwm_stage[0].pwm0/counter_1)
+     LUT4:I0->O            0   0.254   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_lutdi (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<0> (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<1> (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<2> (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<3> (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<4> (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<5> (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<5>)
+     MUXCY:CI->O           1   0.235   0.790  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<6> (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<6>)
+     LUT5:I3->O            1   0.250   0.682  gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<7> (gpio0/pwm_stage[0].pwm0/Mcompar_pwm<0>_cy<7>)
+     LUT4:I3->O            1   0.254   0.681  gpio0/mux_out/gpio_selector[0].mux0/Mmux_mux_output11 (gpio_io_0_IOBUF)
+     IOBUF:I->IO               2.912          gpio_io_0_IOBUF (gpio_io<0>)
+    ----------------------------------------
+    Total                      8.133ns (4.728ns logic, 3.405ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 31 / 15
+-------------------------------------------------------------------------
+Delay:               6.328ns (Levels of Logic = 3)
+  Source:            mcu_nrd (PAD)
+  Destination:       mcu_sram_data<7> (PAD)
+
+  Data Path: mcu_nrd to mcu_sram_data<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.910  mcu_nrd_IBUF (mcu_nrd_IBUF)
+     LUT3:I0->O            8   0.235   0.943  mcu_bram0/T1 (mcu_bram0/T)
+     IOBUF:T->IO               2.912          mcu_sram_data_7_IOBUF (mcu_sram_data<7>)
+    ----------------------------------------
+    Total                      6.328ns (4.475ns logic, 1.853ns route)
+                                       (70.7% logic, 29.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_50
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+clk_50               |    7.296|    4.070|    5.920|         |
+gpio0/core_clk_bank_0|         |         |    1.324|         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock gpio0/core_clk_bank_0
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+clk_50               |    4.552|         |         |         |
+gpio0/core_clk_bank_0|    4.796|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock gpio0/core_clk_bank_1
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+clk_50               |    4.552|         |         |         |
+gpio0/core_clk_bank_1|    4.859|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock gpio0/core_clk_bank_2
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+clk_50               |    4.552|         |         |         |
+gpio0/core_clk_bank_2|    4.796|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.58 secs
+ 
+--> 
+
+
+Total memory usage is 400444 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  249 (   0 filtered)
+Number of infos    :  122 (   0 filtered)
+

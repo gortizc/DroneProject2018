@@ -1,0 +1,2373 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -v 25 project_r.ncd
+project.pcf
+
+Design file:              project_r.ncd
+Physical constraint file: project.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report, limited to 25 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_PER_CLK50 = PERIOD TIMEGRP "clk50_grp" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_PER_CLK50 = PERIOD TIMEGRP "clk50_grp" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 2.000ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 3.000ns (333.333MHz) (Tdcmper_CLKFX)
+  Physical resource: dcm/dcm_sp_inst/CLKFX
+  Logical resource: dcm/dcm_sp_inst/CLKFX
+  Location pin: DCM_X0Y1.CLKFX
+  Clock network: dcm/clkfx
+--------------------------------------------------------------------------------
+Slack: 2.000ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 3.000ns (333.333MHz) (Tdcmper_CLKFX)
+  Physical resource: dcm/dcm_sp_inst/CLKFX180
+  Logical resource: dcm/dcm_sp_inst/CLKFX180
+  Location pin: DCM_X0Y1.CLKFX180
+  Clock network: dcm/nclkfx
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: dcm/dcm_sp_inst/CLKIN
+  Logical resource: dcm/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: dcm/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: dcm/dcm_sp_inst/CLKIN
+  Logical resource: dcm/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: dcm/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKIN)
+  Physical resource: dcm/dcm_sp_inst/CLKIN
+  Logical resource: dcm/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: dcm/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKOUT)
+  Physical resource: dcm/dcm_sp_inst/CLK0
+  Logical resource: dcm/dcm_sp_inst/CLK0
+  Location pin: DCM_X0Y1.CLK0
+  Clock network: dcm/clk0
+--------------------------------------------------------------------------------
+Slack: 180.000ns (max period limit - period)
+  Period: 20.000ns
+  Max period limit: 200.000ns (5.000MHz) (Tdcmper_CLKIN)
+  Physical resource: dcm/dcm_sp_inst/CLKIN
+  Logical resource: dcm/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: dcm/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 180.000ns (max period limit - period)
+  Period: 20.000ns
+  Max period limit: 200.000ns (5.000MHz) (Tdcmper_CLKOUT)
+  Physical resource: dcm/dcm_sp_inst/CLK0
+  Logical resource: dcm/dcm_sp_inst/CLK0
+  Location pin: DCM_X0Y1.CLK0
+  Clock network: dcm/clk0
+--------------------------------------------------------------------------------
+Slack: 195.000ns (max period limit - period)
+  Period: 5.000ns
+  Max period limit: 200.000ns (5.000MHz) (Tdcmper_CLKFX)
+  Physical resource: dcm/dcm_sp_inst/CLKFX
+  Logical resource: dcm/dcm_sp_inst/CLKFX
+  Location pin: DCM_X0Y1.CLKFX
+  Clock network: dcm/clkfx
+--------------------------------------------------------------------------------
+Slack: 195.000ns (max period limit - period)
+  Period: 5.000ns
+  Max period limit: 200.000ns (5.000MHz) (Tdcmper_CLKFX)
+  Physical resource: dcm/dcm_sp_inst/CLKFX180
+  Logical resource: dcm/dcm_sp_inst/CLKFX180
+  Location pin: DCM_X0Y1.CLKFX180
+  Clock network: dcm/nclkfx
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_PER_SCK = PERIOD TIMEGRP "sck_grp" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.866ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_PER_SCK = PERIOD TIMEGRP "sck_grp" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.134ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: spi0/SCKr<0>/CLK0
+  Logical resource: spi0/SCKr_0/CLK0
+  Location pin: ILOGIC_X11Y63.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_dcm_clkfx = PERIOD TIMEGRP "dcm_clkfx" TS_PER_CLK50 / 4 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 33951 paths analyzed, 4470 endpoints analyzed, 839 failing endpoints
+ 839 timing errors detected. (839 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  11.286ns.
+--------------------------------------------------------------------------------
+Slack:                  -3.143ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/period_0 (FF)
+  Destination:          pwm_controller0/pwm2/timeWork_reg_23_BRB0 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      5.452ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.006ns (0.656 - 0.662)
+  Source Clock:         clk falling at 2.500ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/period_0 to pwm_controller0/pwm2/timeWork_reg_23_BRB0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y24.BMUX     Tshcko                0.576   N127_FRB
+                                                       pwm_controller0/period_0
+    SLICE_X4Y4.A3        net (fanout=6)        2.287   pwm_controller0/period<0>
+    SLICE_X4Y4.COUT      Topcya                0.482   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_lutdi
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+    SLICE_X4Y5.CIN       net (fanout=1)        0.003   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+    SLICE_X4Y5.COUT      Tbyp                  0.093   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+    SLICE_X4Y6.CIN       net (fanout=1)        0.082   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+    SLICE_X4Y6.CMUX      Tcinc                 0.302   pwm_controller0/period<13>
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+    SLICE_X9Y6.C6        net (fanout=1)        1.254   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+    SLICE_X9Y6.CLK       Tas                   0.373   pwm_controller0/pwm2/timeWork_reg_23_BRB0
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<11>
+                                                       pwm_controller0/pwm2/timeWork_reg_23_BRB0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.452ns (1.826ns logic, 3.626ns route)
+                                                       (33.5% logic, 66.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -3.135ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/period_0 (FF)
+  Destination:          pwm_controller0/pwm2/timeWork_reg_23_BRB0 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      5.444ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.006ns (0.656 - 0.662)
+  Source Clock:         clk falling at 2.500ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/period_0 to pwm_controller0/pwm2/timeWork_reg_23_BRB0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y24.BMUX     Tshcko                0.576   N127_FRB
+                                                       pwm_controller0/period_0
+    SLICE_X4Y4.A3        net (fanout=6)        2.287   pwm_controller0/period<0>
+    SLICE_X4Y4.COUT      Topcya                0.474   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_lut<0>
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+    SLICE_X4Y5.CIN       net (fanout=1)        0.003   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+    SLICE_X4Y5.COUT      Tbyp                  0.093   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+    SLICE_X4Y6.CIN       net (fanout=1)        0.082   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+    SLICE_X4Y6.CMUX      Tcinc                 0.302   pwm_controller0/period<13>
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+    SLICE_X9Y6.C6        net (fanout=1)        1.254   pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+    SLICE_X9Y6.CLK       Tas                   0.373   pwm_controller0/pwm2/timeWork_reg_23_BRB0
+                                                       pwm_controller0/pwm2/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<11>
+                                                       pwm_controller0/pwm2/timeWork_reg_23_BRB0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.444ns (1.818ns logic, 3.626ns route)
+                                                       (33.4% logic, 66.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -3.131ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_14 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.372ns (Levels of Logic = 2)
+  Clock Path Skew:      0.426ns (1.150 - 0.724)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_14 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y11.BQ       Tcko                  0.430   pwm_controller0/pwm4/counter<14>
+                                                       pwm_controller0/pwm4/counter_14
+    SLICE_X2Y24.A1       net (fanout=9)        1.717   pwm_controller0/pwm4/counter<14>
+    SLICE_X2Y24.DMUX     Topad                 0.686   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<4>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.372ns (2.855ns logic, 5.517ns route)
+                                                       (34.1% logic, 65.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -3.013ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_12 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.254ns (Levels of Logic = 2)
+  Clock Path Skew:      0.426ns (1.150 - 0.724)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_12 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y11.BMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<14>
+                                                       pwm_controller0/pwm4/counter_12
+    SLICE_X2Y24.A5       net (fanout=9)        1.511   pwm_controller0/pwm4/counter<12>
+    SLICE_X2Y24.DMUX     Topad                 0.686   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<4>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.254ns (2.943ns logic, 5.311ns route)
+                                                       (35.7% logic, 64.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -3.006ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_6 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.245ns (Levels of Logic = 3)
+  Clock Path Skew:      0.424ns (1.150 - 0.726)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_6 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y13.CMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<3>
+                                                       pwm_controller0/pwm4/counter_6
+    SLICE_X2Y23.C1       net (fanout=9)        1.552   pwm_controller0/pwm4/counter<6>
+    SLICE_X2Y23.COUT     Topcyc                0.328   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<2>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.245ns (2.890ns logic, 5.355ns route)
+                                                       (35.1% logic, 64.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.955ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_17 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.256ns (Levels of Logic = 2)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_17 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y15.AMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<13>
+                                                       pwm_controller0/pwm4/counter_17
+    SLICE_X2Y24.B4       net (fanout=9)        1.504   pwm_controller0/pwm4/counter<17>
+    SLICE_X2Y24.DMUX     Topbd                 0.695   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<5>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.256ns (2.952ns logic, 5.304ns route)
+                                                       (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.934ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_3 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.173ns (Levels of Logic = 3)
+  Clock Path Skew:      0.424ns (1.150 - 0.726)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_3 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y13.DQ       Tcko                  0.430   pwm_controller0/pwm4/counter<3>
+                                                       pwm_controller0/pwm4/counter_3
+    SLICE_X2Y23.B3       net (fanout=9)        1.413   pwm_controller0/pwm4/counter<3>
+    SLICE_X2Y23.COUT     Topcyb                0.483   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<1>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.173ns (2.957ns logic, 5.216ns route)
+                                                       (36.2% logic, 63.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.848ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_2 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.087ns (Levels of Logic = 3)
+  Clock Path Skew:      0.424ns (1.150 - 0.726)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_2 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y13.CQ       Tcko                  0.430   pwm_controller0/pwm4/counter<3>
+                                                       pwm_controller0/pwm4/counter_2
+    SLICE_X2Y23.A1       net (fanout=9)        1.336   pwm_controller0/pwm4/counter<2>
+    SLICE_X2Y23.COUT     Topcya                0.474   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<0>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.087ns (2.948ns logic, 5.139ns route)
+                                                       (36.5% logic, 63.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.809ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_4 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.110ns (Levels of Logic = 3)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_4 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y14.BMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<15>
+                                                       pwm_controller0/pwm4/counter_4
+    SLICE_X2Y23.B1       net (fanout=9)        1.262   pwm_controller0/pwm4/counter<4>
+    SLICE_X2Y23.COUT     Topcyb                0.483   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<1>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.110ns (3.045ns logic, 5.065ns route)
+                                                       (37.5% logic, 62.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.803ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/period_0 (FF)
+  Destination:          pwm_controller0/pwm1/timeWork_reg_23_BRB0 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      5.108ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.010ns (0.652 - 0.662)
+  Source Clock:         clk falling at 2.500ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/period_0 to pwm_controller0/pwm1/timeWork_reg_23_BRB0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y24.BMUX     Tshcko                0.576   N127_FRB
+                                                       pwm_controller0/period_0
+    SLICE_X0Y3.A3        net (fanout=6)        1.827   pwm_controller0/period<0>
+    SLICE_X0Y3.COUT      Topcya                0.482   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_lutdi
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+    SLICE_X0Y4.CIN       net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+    SLICE_X0Y4.COUT      Tbyp                  0.093   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+    SLICE_X0Y5.CIN       net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+    SLICE_X0Y5.CMUX      Tcinc                 0.302   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+    SLICE_X7Y4.D3        net (fanout=1)        1.449   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+    SLICE_X7Y4.CLK       Tas                   0.373   pwm_controller0/pwm1/timeWork_reg_23_BRB0
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<11>
+                                                       pwm_controller0/pwm1/timeWork_reg_23_BRB0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.108ns (1.826ns logic, 3.282ns route)
+                                                       (35.7% logic, 64.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.795ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/period_0 (FF)
+  Destination:          pwm_controller0/pwm1/timeWork_reg_23_BRB0 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      5.100ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.010ns (0.652 - 0.662)
+  Source Clock:         clk falling at 2.500ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/period_0 to pwm_controller0/pwm1/timeWork_reg_23_BRB0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y24.BMUX     Tshcko                0.576   N127_FRB
+                                                       pwm_controller0/period_0
+    SLICE_X0Y3.A3        net (fanout=6)        1.827   pwm_controller0/period<0>
+    SLICE_X0Y3.COUT      Topcya                0.474   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_lut<0>
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+    SLICE_X0Y4.CIN       net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<3>
+    SLICE_X0Y4.COUT      Tbyp                  0.093   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+    SLICE_X0Y5.CIN       net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<7>
+    SLICE_X0Y5.CMUX      Tcinc                 0.302   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+    SLICE_X7Y4.D3        net (fanout=1)        1.449   pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<10>
+    SLICE_X7Y4.CLK       Tas                   0.373   pwm_controller0/pwm1/timeWork_reg_23_BRB0
+                                                       pwm_controller0/pwm1/Mcompar_time_work[23]_period[23]_LessThan_2_o_cy<11>
+                                                       pwm_controller0/pwm1/timeWork_reg_23_BRB0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.100ns (1.818ns logic, 3.282ns route)
+                                                       (35.6% logic, 64.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.785ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_15 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.086ns (Levels of Logic = 2)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_15 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y14.DQ       Tcko                  0.430   pwm_controller0/pwm4/counter<15>
+                                                       pwm_controller0/pwm4/counter_15
+    SLICE_X2Y24.B3       net (fanout=9)        1.422   pwm_controller0/pwm4/counter<15>
+    SLICE_X2Y24.DMUX     Topbd                 0.695   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<5>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.086ns (2.864ns logic, 5.222ns route)
+                                                       (35.4% logic, 64.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.781ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_8 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.020ns (Levels of Logic = 3)
+  Clock Path Skew:      0.424ns (1.150 - 0.726)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_8 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y13.AMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<3>
+                                                       pwm_controller0/pwm4/counter_8
+    SLICE_X2Y23.C6       net (fanout=9)        1.327   pwm_controller0/pwm4/counter<8>
+    SLICE_X2Y23.COUT     Topcyc                0.328   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<2>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.020ns (2.890ns logic, 5.130ns route)
+                                                       (36.0% logic, 64.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.768ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_11 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      8.007ns (Levels of Logic = 3)
+  Clock Path Skew:      0.424ns (1.150 - 0.726)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_11 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y13.DMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<3>
+                                                       pwm_controller0/pwm4/counter_11
+    SLICE_X2Y23.D4       net (fanout=9)        1.330   pwm_controller0/pwm4/counter<11>
+    SLICE_X2Y23.COUT     Topcyd                0.312   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.007ns (2.874ns logic, 5.133ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.684ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_1 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.923ns (Levels of Logic = 3)
+  Clock Path Skew:      0.424ns (1.150 - 0.726)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_1 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y13.BMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<3>
+                                                       pwm_controller0/pwm4/counter_1
+    SLICE_X2Y23.A4       net (fanout=9)        1.084   pwm_controller0/pwm4/counter<1>
+    SLICE_X2Y23.COUT     Topcya                0.474   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<0>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.923ns (3.036ns logic, 4.887ns route)
+                                                       (38.3% logic, 61.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.608ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_18 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.909ns (Levels of Logic = 2)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_18 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y15.CMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<13>
+                                                       pwm_controller0/pwm4/counter_18
+    SLICE_X2Y24.C4       net (fanout=9)        1.312   pwm_controller0/pwm4/counter<18>
+    SLICE_X2Y24.DMUX     Topcd                 0.540   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<6>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.909ns (2.797ns logic, 5.112ns route)
+                                                       (35.4% logic, 64.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.593ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_16 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.894ns (Levels of Logic = 2)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_16 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y15.BMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<13>
+                                                       pwm_controller0/pwm4/counter_16
+    SLICE_X2Y24.B6       net (fanout=9)        1.142   pwm_controller0/pwm4/counter<16>
+    SLICE_X2Y24.DMUX     Topbd                 0.695   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<5>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.894ns (2.952ns logic, 4.942ns route)
+                                                       (37.4% logic, 62.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.590ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_13 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.891ns (Levels of Logic = 2)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_13 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y15.DQ       Tcko                  0.430   pwm_controller0/pwm4/counter<13>
+                                                       pwm_controller0/pwm4/counter_13
+    SLICE_X2Y24.A4       net (fanout=9)        1.236   pwm_controller0/pwm4/counter<13>
+    SLICE_X2Y24.DMUX     Topad                 0.686   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<4>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.891ns (2.855ns logic, 5.036ns route)
+                                                       (36.2% logic, 63.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.564ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_21 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.865ns (Levels of Logic = 2)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_21 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y15.BQ       Tcko                  0.430   pwm_controller0/pwm4/counter<13>
+                                                       pwm_controller0/pwm4/counter_21
+    SLICE_X2Y24.D3       net (fanout=9)        1.372   pwm_controller0/pwm4/counter<21>
+    SLICE_X2Y24.DMUX     Topdd                 0.524   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<7>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.865ns (2.693ns logic, 5.172ns route)
+                                                       (34.2% logic, 65.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.518ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_7 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.757ns (Levels of Logic = 3)
+  Clock Path Skew:      0.424ns (1.150 - 0.726)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_7 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y13.AQ       Tcko                  0.430   pwm_controller0/pwm4/counter<3>
+                                                       pwm_controller0/pwm4/counter_7
+    SLICE_X2Y23.C5       net (fanout=9)        1.152   pwm_controller0/pwm4/counter<7>
+    SLICE_X2Y23.COUT     Topcyc                0.328   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<2>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.757ns (2.802ns logic, 4.955ns route)
+                                                       (36.1% logic, 63.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.503ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_5 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.742ns (Levels of Logic = 3)
+  Clock Path Skew:      0.424ns (1.150 - 0.726)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_5 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y13.BQ       Tcko                  0.430   pwm_controller0/pwm4/counter<3>
+                                                       pwm_controller0/pwm4/counter_5
+    SLICE_X2Y23.B5       net (fanout=9)        0.982   pwm_controller0/pwm4/counter<5>
+    SLICE_X2Y23.COUT     Topcyb                0.483   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<1>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.742ns (2.957ns logic, 4.785ns route)
+                                                       (38.2% logic, 61.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.492ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_19 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.793ns (Levels of Logic = 2)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_19 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y14.AQ       Tcko                  0.430   pwm_controller0/pwm4/counter<15>
+                                                       pwm_controller0/pwm4/counter_19
+    SLICE_X2Y24.C1       net (fanout=9)        1.284   pwm_controller0/pwm4/counter<19>
+    SLICE_X2Y24.DMUX     Topcd                 0.540   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<6>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.793ns (2.709ns logic, 5.084ns route)
+                                                       (34.8% logic, 65.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.478ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_9 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.781ns (Levels of Logic = 3)
+  Clock Path Skew:      0.488ns (1.150 - 0.662)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_9 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y16.DMUX     Tshcko                0.518   pwm_controller0/pwm4/counter<23>
+                                                       pwm_controller0/pwm4/counter_9
+    SLICE_X2Y23.D3       net (fanout=9)        1.104   pwm_controller0/pwm4/counter<9>
+    SLICE_X2Y23.COUT     Topcyd                0.312   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.781ns (2.874ns logic, 4.907ns route)
+                                                       (36.9% logic, 63.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.444ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm4/counter_10 (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.745ns (Levels of Logic = 3)
+  Clock Path Skew:      0.486ns (1.150 - 0.664)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm4/counter_10 to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y14.BQ       Tcko                  0.430   pwm_controller0/pwm4/counter<15>
+                                                       pwm_controller0/pwm4/counter_10
+    SLICE_X2Y23.D6       net (fanout=9)        1.156   pwm_controller0/pwm4/counter<10>
+    SLICE_X2Y23.COUT     Topcyd                0.312   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.745ns (2.786ns logic, 4.959ns route)
+                                                       (36.0% logic, 64.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.407ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB (FF)
+  Destination:          pwm_controller0/pwm1/PWM_out_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      7.728ns (Levels of Logic = 3)
+  Clock Path Skew:      0.506ns (1.150 - 0.644)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB to pwm_controller0/pwm1/PWM_out_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y23.AQ       Tcko                  0.525   pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB
+                                                       pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB
+    SLICE_X2Y23.A3       net (fanout=1)        0.882   pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB
+    SLICE_X2Y23.COUT     Topcya                0.474   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_lut<0>
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.CIN      net (fanout=1)        0.003   pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<3>
+    SLICE_X2Y24.DMUX     Tcind                 0.305   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+                                                       pwm_controller0/pwm1/Mcompar_counter[23]_period_reg[23]_equal_21_o_cy<7>
+    SLICE_X8Y6.B5        net (fanout=1)        2.516   pwm_controller0/pwm1/counter[23]_period_reg[23]_equal_21_o
+    SLICE_X8Y6.BMUX      Topbb                 0.561   pwm_controller0/pwm1/PWM_out
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_lut1
+                                                       pwm_controller0/pwm1/PWM_out_rstpot_cy1
+    OLOGIC_X12Y20.D1     net (fanout=1)        1.284   pwm_controller0/pwm1/PWM_out_rstpot
+    OLOGIC_X12Y20.CLK0   Todck                 1.178   pwm_controller0/pwm1/PWM_out_1
+                                                       pwm_controller0/pwm1/PWM_out_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.728ns (3.043ns logic, 4.685ns route)
+                                                       (39.4% logic, 60.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_dcm_clkfx = PERIOD TIMEGRP "dcm_clkfx" TS_PER_CLK50 / 4 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 1.430ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: everloop0/everloopram0/Mram_ram/CLKAWRCLK
+  Logical resource: everloop0/everloopram0/Mram_ram/CLKAWRCLK
+  Location pin: RAMB8_X0Y15.CLKAWRCLK
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 1.430ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKB(Fmax))
+  Physical resource: everloop0/everloopram0/Mram_ram/CLKBRDCLK
+  Logical resource: everloop0/everloopram0/Mram_ram/CLKBRDCLK
+  Location pin: RAMB8_X0Y15.CLKBRDCLK
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 1.430ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKB(Fmax))
+  Physical resource: mcu_bram0/ram/CLKB
+  Logical resource: mcu_bram0/ram/CLKB
+  Location pin: RAMB16_X0Y12.CLKB
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 1.430ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: bram0/Mram_ram/CLKA
+  Logical resource: bram0/Mram_ram/CLKA
+  Location pin: RAMB16_X0Y18.CLKA
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.334ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: dcm/clkout1_buf/I0
+  Logical resource: dcm/clkout1_buf/I0
+  Location pin: BUFGMUX_X2Y4.I0
+  Clock network: dcm/clkfx
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: spi0/miso_sr<15>/CLK0
+  Logical resource: spi0/miso_sr_15/CK0
+  Location pin: OLOGIC_X11Y62.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: pwm_controller0/pwm1/PWM_out_1/CLK0
+  Logical resource: pwm_controller0/pwm1/PWM_out_1/CK0
+  Location pin: OLOGIC_X12Y20.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: pwm_controller0/pwm2/PWM_out_1/CLK0
+  Logical resource: pwm_controller0/pwm2/PWM_out_1/CK0
+  Location pin: OLOGIC_X12Y21.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: pwm_controller0/pwm3/PWM_out_1/CLK0
+  Logical resource: pwm_controller0/pwm3/PWM_out_1/CK0
+  Location pin: OLOGIC_X12Y22.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: pwm_controller0/pwm4/PWM_out_1/CLK0
+  Logical resource: pwm_controller0/pwm4/PWM_out_1/CK0
+  Location pin: OLOGIC_X12Y23.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: counter_25_1/CLK0
+  Logical resource: counter_25_1/CK0
+  Location pin: OLOGIC_X1Y3.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: spi1/spi0/sck_1/CLK0
+  Logical resource: spi1/spi0/sck_1/CK0
+  Location pin: OLOGIC_X7Y62.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: spi1/spi_rst_1/CLK0
+  Logical resource: spi1/spi_rst_1/CK0
+  Location pin: OLOGIC_X11Y60.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: everloop0/everloop0/everloop_d/CLK0
+  Logical resource: everloop0/everloop0/everloop_d/CK0
+  Location pin: OLOGIC_X7Y3.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: spi1/spi_cs_1/CLK0
+  Logical resource: spi1/spi_cs_1/CK0
+  Location pin: OLOGIC_X1Y60.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 2.751ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: spi1/spi0/sreg<15>/CLK0
+  Logical resource: spi1/spi0/sreg_15/CK0
+  Location pin: OLOGIC_X6Y62.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: spi0/SSELr<0>/CLK0
+  Logical resource: spi0/SSELr_0/CLK0
+  Location pin: ILOGIC_X10Y60.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: spi0/SCKr<0>/CLK0
+  Logical resource: spi0/SCKr_0/CLK0
+  Location pin: ILOGIC_X11Y63.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: spi0/MOSIr<0>/CLK0
+  Logical resource: spi0/MOSIr_0/CLK0
+  Location pin: ILOGIC_X11Y61.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: spi1/spi0/rx_register<0>/CLK0
+  Logical resource: spi1/spi0/rx_register_0/CLK0
+  Location pin: ILOGIC_X6Y63.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.933ns (Tispwh)
+  Physical resource: spi1/spi0/rx_register<0>/SR
+  Logical resource: spi1/spi0/rx_register_0/SR
+  Location pin: ILOGIC_X6Y63.SR
+  Clock network: resetn_IBUF
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N29/CLK0
+  Logical resource: gpio0/timer_stage[0].timer0/rTimer_input_0_BRB0/CLK0
+  Location pin: ILOGIC_X12Y25.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N28/CLK0
+  Logical resource: gpio0/timer_stage[0].timer0/rTimer_input_3_BRB0/CLK0
+  Location pin: ILOGIC_X12Y29.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N27/CLK0
+  Logical resource: gpio0/timer_stage[0].timer0/rTimer_input_6_BRB0/CLK0
+  Location pin: ILOGIC_X12Y31.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N26/CLK0
+  Logical resource: gpio0/timer_stage[0].timer0/rTimer_input_9_BRB0/CLK0
+  Location pin: ILOGIC_X12Y32.CLK0
+  Clock network: clk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_dcm_nclkfx = PERIOD TIMEGRP "dcm_nclkfx" TS_PER_CLK50 / 4 
+PHASE 2.5 ns HIGH         50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 31 failing endpoints
+ 31 timing errors detected. (31 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.450ns.
+--------------------------------------------------------------------------------
+Slack:                  -2.098ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_0 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      6.210ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.703ns (0.721 - 1.424)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_0 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X11Y2.Q4      Tickq                 1.778   mcu_addr_0_IBUF
+                                                       mcu_bram0/mcu_buffer_addr_0
+    RAMB16_X0Y12.ADDRA3  net (fanout=1)        4.032   mcu_bram0/mcu_buffer_addr<0>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      6.210ns (2.178ns logic, 4.032ns route)
+                                                       (35.1% logic, 64.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.045ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_2 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      6.157ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.703ns (0.721 - 1.424)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_2 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X10Y2.Q4      Tickq                 1.778   mcu_addr_2_IBUF
+                                                       mcu_bram0/mcu_buffer_addr_2
+    RAMB16_X0Y12.ADDRA5  net (fanout=1)        3.979   mcu_bram0/mcu_buffer_addr<2>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      6.157ns (2.178ns logic, 3.979ns route)
+                                                       (35.4% logic, 64.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.003ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_1 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      6.115ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.703ns (0.721 - 1.424)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_1 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X10Y3.Q4      Tickq                 1.778   mcu_addr_1_IBUF
+                                                       mcu_bram0/mcu_buffer_addr_1
+    RAMB16_X0Y12.ADDRA4  net (fanout=1)        3.937   mcu_bram0/mcu_buffer_addr<1>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      6.115ns (2.178ns logic, 3.937ns route)
+                                                       (35.6% logic, 64.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.952ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_4 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      6.069ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.698ns (0.721 - 1.419)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_4 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X9Y2.Q4       Tickq                 1.778   mcu_addr_4_IBUF
+                                                       mcu_bram0/mcu_buffer_addr_4
+    RAMB16_X0Y12.ADDRA7  net (fanout=1)        3.891   mcu_bram0/mcu_buffer_addr<4>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      6.069ns (2.178ns logic, 3.891ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.929ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_3 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      6.045ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.699ns (0.721 - 1.420)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_3 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X9Y1.Q4       Tickq                 1.778   mcu_addr_3_IBUF
+                                                       mcu_bram0/mcu_buffer_addr_3
+    RAMB16_X0Y12.ADDRA6  net (fanout=1)        3.867   mcu_bram0/mcu_buffer_addr<3>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      6.045ns (2.178ns logic, 3.867ns route)
+                                                       (36.0% logic, 64.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.725ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_data_1 (FF)
+  Destination:          mcu_bram0/mcu_wdBus_1 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      3.391ns (Levels of Logic = 0)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.649ns (0.681 - 1.330)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_data_1 to mcu_bram0/mcu_wdBus_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X10Y61.Q4     Tickq                 1.778   N17
+                                                       mcu_bram0/mcu_buffer_data_1
+    SLICE_X4Y55.BX       net (fanout=1)        1.528   mcu_bram0/mcu_buffer_data<1>
+    SLICE_X4Y55.CLK      Tdick                 0.085   mcu_bram0/mcu_wdBus<3>
+                                                       mcu_bram0/mcu_wdBus_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.391ns (1.863ns logic, 1.528ns route)
+                                                       (54.9% logic, 45.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.669ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_6 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      5.758ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.726ns (0.721 - 1.447)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_6 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X6Y0.Q4       Tickq                 1.778   mcu_bram0/mcu_buffer_addr<6>
+                                                       mcu_bram0/mcu_buffer_addr_6
+    RAMB16_X0Y12.ADDRA9  net (fanout=1)        3.580   mcu_bram0/mcu_buffer_addr<6>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      5.758ns (2.178ns logic, 3.580ns route)
+                                                       (37.8% logic, 62.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.662ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_data_4 (FF)
+  Destination:          mcu_bram0/mcu_wdBus_4 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      3.346ns (Levels of Logic = 0)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.631ns (0.694 - 1.325)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_data_4 to mcu_bram0/mcu_wdBus_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X7Y63.Q4      Tickq                 1.778   N14
+                                                       mcu_bram0/mcu_buffer_data_4
+    SLICE_X2Y57.AX       net (fanout=1)        1.483   mcu_bram0/mcu_buffer_data<4>
+    SLICE_X2Y57.CLK      Tdick                 0.085   mcu_bram0/mcu_wdBus<7>
+                                                       mcu_bram0/mcu_wdBus_4
+    -------------------------------------------------  ---------------------------
+    Total                                      3.346ns (1.863ns logic, 1.483ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.553ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_5 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      5.642ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.726ns (0.721 - 1.447)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_5 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X6Y1.Q4       Tickq                 1.778   mcu_bram0/mcu_buffer_addr<5>
+                                                       mcu_bram0/mcu_buffer_addr_5
+    RAMB16_X0Y12.ADDRA8  net (fanout=1)        3.464   mcu_bram0/mcu_buffer_addr<5>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      5.642ns (2.178ns logic, 3.464ns route)
+                                                       (38.6% logic, 61.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.450ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_data_0 (FF)
+  Destination:          mcu_bram0/mcu_wdBus_0 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      3.095ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.670ns (0.314 - 0.984)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_data_0 to mcu_bram0/mcu_wdBus_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X0Y51.Q4      Tickq                 1.778   N18
+                                                       mcu_bram0/mcu_buffer_data_0
+    SLICE_X4Y55.D5       net (fanout=1)        1.117   mcu_bram0/mcu_buffer_data<0>
+    SLICE_X4Y55.CLK      Tas                   0.200   mcu_bram0/mcu_wdBus<3>
+                                                       mcu_bram0/mcu_buffer_data<0>_rt
+                                                       mcu_bram0/mcu_wdBus_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.095ns (1.978ns logic, 1.117ns route)
+                                                       (63.9% logic, 36.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.379ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_data_2 (FF)
+  Destination:          mcu_bram0/mcu_wdBus_2 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      3.049ns (Levels of Logic = 0)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.645ns (0.681 - 1.326)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_data_2 to mcu_bram0/mcu_wdBus_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X9Y61.Q4      Tickq                 1.778   N16
+                                                       mcu_bram0/mcu_buffer_data_2
+    SLICE_X4Y55.CX       net (fanout=1)        1.186   mcu_bram0/mcu_buffer_data<2>
+    SLICE_X4Y55.CLK      Tdick                 0.085   mcu_bram0/mcu_wdBus<3>
+                                                       mcu_bram0/mcu_wdBus_2
+    -------------------------------------------------  ---------------------------
+    Total                                      3.049ns (1.863ns logic, 1.186ns route)
+                                                       (61.1% logic, 38.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.274ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_data_3 (FF)
+  Destination:          mcu_bram0/mcu_wdBus_3 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      2.945ns (Levels of Logic = 0)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.644ns (0.681 - 1.325)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_data_3 to mcu_bram0/mcu_wdBus_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X7Y61.Q4      Tickq                 1.778   N15
+                                                       mcu_bram0/mcu_buffer_data_3
+    SLICE_X4Y55.DX       net (fanout=1)        1.082   mcu_bram0/mcu_buffer_data<3>
+    SLICE_X4Y55.CLK      Tdick                 0.085   mcu_bram0/mcu_wdBus<3>
+                                                       mcu_bram0/mcu_wdBus_3
+    -------------------------------------------------  ---------------------------
+    Total                                      2.945ns (1.863ns logic, 1.082ns route)
+                                                       (63.3% logic, 36.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.251ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_7 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      5.332ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.734ns (0.721 - 1.455)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_7 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X3Y1.Q4       Tickq                 1.778   mcu_bram0/mcu_buffer_addr<7>
+                                                       mcu_bram0/mcu_buffer_addr_7
+    RAMB16_X0Y12.ADDRA10 net (fanout=1)        3.154   mcu_bram0/mcu_buffer_addr<7>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      5.332ns (2.178ns logic, 3.154ns route)
+                                                       (40.8% logic, 59.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.228ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_data_5 (FF)
+  Destination:          mcu_bram0/mcu_wdBus_5 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      2.891ns (Levels of Logic = 0)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.652ns (0.327 - 0.979)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_data_5 to mcu_bram0/mcu_wdBus_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X6Y60.Q4      Tickq                 1.778   N13
+                                                       mcu_bram0/mcu_buffer_data_5
+    SLICE_X2Y57.BX       net (fanout=1)        1.028   mcu_bram0/mcu_buffer_data<5>
+    SLICE_X2Y57.CLK      Tdick                 0.085   mcu_bram0/mcu_wdBus<7>
+                                                       mcu_bram0/mcu_wdBus_5
+    -------------------------------------------------  ---------------------------
+    Total                                      2.891ns (1.863ns logic, 1.028ns route)
+                                                       (64.4% logic, 35.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.219ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_data_6 (FF)
+  Destination:          mcu_bram0/mcu_wdBus_6 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      2.882ns (Levels of Logic = 0)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.652ns (0.327 - 0.979)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_data_6 to mcu_bram0/mcu_wdBus_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X6Y61.Q4      Tickq                 1.778   N12
+                                                       mcu_bram0/mcu_buffer_data_6
+    SLICE_X2Y57.CX       net (fanout=1)        1.019   mcu_bram0/mcu_buffer_data<6>
+    SLICE_X2Y57.CLK      Tdick                 0.085   mcu_bram0/mcu_wdBus<7>
+                                                       mcu_bram0/mcu_wdBus_6
+    -------------------------------------------------  ---------------------------
+    Total                                      2.882ns (1.863ns logic, 1.019ns route)
+                                                       (64.6% logic, 35.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.093ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_snwe (FF)
+  Destination:          mcu_bram0/mcu_w_st (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      2.752ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.656ns (0.294 - 0.950)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_snwe to mcu_bram0/mcu_w_st
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X12Y46.Q4     Tickq                 1.778   mcu_nwe_IBUF
+                                                       mcu_bram0/mcu_snwe
+    SLICE_X9Y51.C5       net (fanout=1)        0.601   mcu_bram0/mcu_snwe
+    SLICE_X9Y51.CLK      Tas                   0.373   mcu_bram0/mcu_w_st
+                                                       mcu_bram0/mcu_w_st_rstpot
+                                                       mcu_bram0/mcu_w_st
+    -------------------------------------------------  ---------------------------
+    Total                                      2.752ns (2.151ns logic, 0.601ns route)
+                                                       (78.2% logic, 21.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -1.053ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_data_7 (FF)
+  Destination:          mcu_bram0/mcu_wdBus_7 (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      2.700ns (Levels of Logic = 0)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.668ns (0.327 - 0.995)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_data_7 to mcu_bram0/mcu_wdBus_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X2Y60.Q4      Tickq                 1.778   N11
+                                                       mcu_bram0/mcu_buffer_data_7
+    SLICE_X2Y57.DX       net (fanout=1)        0.837   mcu_bram0/mcu_buffer_data<7>
+    SLICE_X2Y57.CLK      Tdick                 0.085   mcu_bram0/mcu_wdBus<7>
+                                                       mcu_bram0/mcu_wdBus_7
+    -------------------------------------------------  ---------------------------
+    Total                                      2.700ns (1.863ns logic, 0.837ns route)
+                                                       (69.0% logic, 31.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.984ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_snwe (FF)
+  Destination:          mcu_bram0/mcu_we (FF)
+  Requirement:          2.500ns
+  Data Path Delay:      2.643ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.656ns (0.294 - 0.950)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk falling at 5.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_snwe to mcu_bram0/mcu_we
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X12Y46.Q4     Tickq                 1.778   mcu_nwe_IBUF
+                                                       mcu_bram0/mcu_snwe
+    SLICE_X9Y51.C5       net (fanout=1)        0.601   mcu_bram0/mcu_snwe
+    SLICE_X9Y51.CLK      Tas                   0.264   mcu_bram0/mcu_w_st
+                                                       mcu_bram0/mcu_we_rstpot
+                                                       mcu_bram0/mcu_we
+    -------------------------------------------------  ---------------------------
+    Total                                      2.643ns (2.042ns logic, 0.601ns route)
+                                                       (77.3% logic, 22.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.817ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_we (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          2.500ns
+  Data Path Delay:      3.080ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.052ns (0.633 - 0.685)
+  Source Clock:         nclk falling at 0.000ns
+  Destination Clock:    nclk rising at 2.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_we to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y51.CMUX     Tshcko                0.518   mcu_bram0/mcu_w_st
+                                                       mcu_bram0/mcu_we
+    RAMB16_X0Y12.WEA0    net (fanout=4)        2.232   mcu_bram0/mcu_we
+    RAMB16_X0Y12.CLKA    Trcck_WEA             0.330   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      3.080ns (0.848ns logic, 2.232ns route)
+                                                       (27.5% logic, 72.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.701ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_we (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          2.500ns
+  Data Path Delay:      2.964ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.052ns (0.633 - 0.685)
+  Source Clock:         nclk falling at 0.000ns
+  Destination Clock:    nclk rising at 2.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_we to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y51.CMUX     Tshcko                0.518   mcu_bram0/mcu_w_st
+                                                       mcu_bram0/mcu_we
+    RAMB16_X0Y12.WEA1    net (fanout=4)        2.116   mcu_bram0/mcu_we
+    RAMB16_X0Y12.CLKA    Trcck_WEA             0.330   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      2.964ns (0.848ns logic, 2.116ns route)
+                                                       (28.6% logic, 71.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.701ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_we (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          2.500ns
+  Data Path Delay:      2.964ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.052ns (0.633 - 0.685)
+  Source Clock:         nclk falling at 0.000ns
+  Destination Clock:    nclk rising at 2.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_we to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y51.CMUX     Tshcko                0.518   mcu_bram0/mcu_w_st
+                                                       mcu_bram0/mcu_we
+    RAMB16_X0Y12.WEA3    net (fanout=4)        2.116   mcu_bram0/mcu_we
+    RAMB16_X0Y12.CLKA    Trcck_WEA             0.330   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      2.964ns (0.848ns logic, 2.116ns route)
+                                                       (28.6% logic, 71.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.688ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_we (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          2.500ns
+  Data Path Delay:      2.951ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.052ns (0.633 - 0.685)
+  Source Clock:         nclk falling at 0.000ns
+  Destination Clock:    nclk rising at 2.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_we to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y51.CMUX     Tshcko                0.518   mcu_bram0/mcu_w_st
+                                                       mcu_bram0/mcu_we
+    RAMB16_X0Y12.WEA2    net (fanout=4)        2.103   mcu_bram0/mcu_we
+    RAMB16_X0Y12.CLKA    Trcck_WEA             0.330   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      2.951ns (0.848ns logic, 2.103ns route)
+                                                       (28.7% logic, 71.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.539ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_wdBus_1 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          2.500ns
+  Data Path Delay:      2.782ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.072ns (0.633 - 0.705)
+  Source Clock:         nclk falling at 0.000ns
+  Destination Clock:    nclk rising at 2.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_wdBus_1 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y55.BQ       Tcko                  0.525   mcu_bram0/mcu_wdBus<3>
+                                                       mcu_bram0/mcu_wdBus_1
+    RAMB16_X0Y12.DIA1    net (fanout=1)        1.957   mcu_bram0/mcu_wdBus<1>
+    RAMB16_X0Y12.CLKA    Trdck_DIA             0.300   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      2.782ns (0.825ns logic, 1.957ns route)
+                                                       (29.7% logic, 70.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.523ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_buffer_addr_10 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      4.650ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.688ns (0.633 - 1.321)
+  Source Clock:         nclk rising at 2.500ns
+  Destination Clock:    nclk rising at 7.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_buffer_addr_10 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    ILOGIC_X12Y49.Q4     Tickq                 1.778   mcu_addr_10_IBUF
+                                                       mcu_bram0/mcu_buffer_addr_10
+    RAMB16_X0Y12.ADDRA13 net (fanout=1)        2.472   mcu_bram0/mcu_buffer_addr<10>
+    RAMB16_X0Y12.CLKA    Trcck_ADDRA           0.400   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      4.650ns (2.178ns logic, 2.472ns route)
+                                                       (46.8% logic, 53.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.493ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mcu_bram0/mcu_wdBus_2 (FF)
+  Destination:          mcu_bram0/ram (RAM)
+  Requirement:          2.500ns
+  Data Path Delay:      2.736ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.072ns (0.633 - 0.705)
+  Source Clock:         nclk falling at 0.000ns
+  Destination Clock:    nclk rising at 2.500ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mcu_bram0/mcu_wdBus_2 to mcu_bram0/ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y55.CQ       Tcko                  0.525   mcu_bram0/mcu_wdBus<3>
+                                                       mcu_bram0/mcu_wdBus_2
+    RAMB16_X0Y12.DIA2    net (fanout=1)        1.911   mcu_bram0/mcu_wdBus<2>
+    RAMB16_X0Y12.CLKA    Trdck_DIA             0.300   mcu_bram0/ram
+                                                       mcu_bram0/ram
+    -------------------------------------------------  ---------------------------
+    Total                                      2.736ns (0.825ns logic, 1.911ns route)
+                                                       (30.2% logic, 69.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_dcm_nclkfx = PERIOD TIMEGRP "dcm_nclkfx" TS_PER_CLK50 / 4 PHASE 2.5 ns HIGH
+        50%;
+--------------------------------------------------------------------------------
+Slack: 1.430ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: mcu_bram0/ram/CLKA
+  Logical resource: mcu_bram0/ram/CLKA
+  Location pin: RAMB16_X0Y12.CLKA
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 2.334ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: dcm/clkout2_buf/I0
+  Logical resource: dcm/clkout2_buf/I0
+  Location pin: BUFGMUX_X2Y2.I0
+  Clock network: dcm/nclkfx
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_bram0/mcu_buffer_addr<5>/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_5/CLK0
+  Location pin: ILOGIC_X6Y1.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_bram0/mcu_buffer_addr<6>/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_6/CLK0
+  Location pin: ILOGIC_X6Y0.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_bram0/mcu_buffer_addr<7>/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_7/CLK0
+  Location pin: ILOGIC_X3Y1.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_bram0/mcu_buffer_addr<8>/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_8/CLK0
+  Location pin: ILOGIC_X0Y33.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_bram0/mcu_buffer_addr<9>/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_9/CLK0
+  Location pin: ILOGIC_X0Y34.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N18/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_data_0/CLK0
+  Location pin: ILOGIC_X0Y51.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N17/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_data_1/CLK0
+  Location pin: ILOGIC_X10Y61.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N16/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_data_2/CLK0
+  Location pin: ILOGIC_X9Y61.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N15/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_data_3/CLK0
+  Location pin: ILOGIC_X7Y61.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N14/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_data_4/CLK0
+  Location pin: ILOGIC_X7Y63.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N13/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_data_5/CLK0
+  Location pin: ILOGIC_X6Y60.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N12/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_data_6/CLK0
+  Location pin: ILOGIC_X6Y61.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: N11/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_data_7/CLK0
+  Location pin: ILOGIC_X2Y60.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_addr_10_IBUF/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_10/CLK0
+  Location pin: ILOGIC_X12Y49.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_nwe_IBUF/CLK0
+  Logical resource: mcu_bram0/mcu_snwe/CLK0
+  Location pin: ILOGIC_X12Y46.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_addr_0_IBUF/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_0/CLK0
+  Location pin: ILOGIC_X11Y2.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_addr_1_IBUF/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_1/CLK0
+  Location pin: ILOGIC_X10Y3.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_addr_2_IBUF/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_2/CLK0
+  Location pin: ILOGIC_X10Y2.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_addr_3_IBUF/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_3/CLK0
+  Location pin: ILOGIC_X9Y1.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 3.134ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.866ns (535.906MHz) (Tickper)
+  Physical resource: mcu_addr_4_IBUF/CLK0
+  Logical resource: mcu_bram0/mcu_buffer_addr_4/CLK0
+  Location pin: ILOGIC_X9Y2.CLK0
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 4.520ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: mcu_bram0/mcu_wdBus<7>/CLK
+  Logical resource: mcu_bram0/mcu_wdBus_4/CK
+  Location pin: SLICE_X2Y57.CLK
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 4.520ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: mcu_bram0/mcu_wdBus<7>/CLK
+  Logical resource: mcu_bram0/mcu_wdBus_5/CK
+  Location pin: SLICE_X2Y57.CLK
+  Clock network: nclk
+--------------------------------------------------------------------------------
+Slack: 4.520ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: mcu_bram0/mcu_wdBus<7>/CLK
+  Logical resource: mcu_bram0/mcu_wdBus_6/CK
+  Location pin: SLICE_X2Y57.CLK
+  Clock network: nclk
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_PER_CLK50
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_PER_CLK50                   |     20.000ns|      8.000ns|     45.144ns|            0|          870|            0|        33987|
+| TS_dcm_clkfx                  |      5.000ns|     11.286ns|          N/A|          839|            0|        33951|            0|
+| TS_dcm_nclkfx                 |      5.000ns|      8.450ns|          N/A|           31|            0|           36|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+2 constraints not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_50
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50         |    8.131|    5.643|    4.726|    4.743|
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 870  Score: 495351  (Setup/Max: 495351, Hold: 0)
+
+Constraints cover 33987 paths, 0 nets, and 4800 connections
+
+Design statistics:
+   Minimum period:  11.286ns{1}   (Maximum frequency:  88.605MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Feb 23 14:26:14 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 411 MB
+
+
+

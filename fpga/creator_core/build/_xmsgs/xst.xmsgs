@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 215: Port <arg fmt="%s" index="1">m0_ack_o</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 352: Port <arg fmt="%s" index="1">rd</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 459: Port <arg fmt="%s" index="1">led_fb</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 480: Port <arg fmt="%s" index="1">wb_ack_o</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 502: Port <arg fmt="%s" index="1">wb_sel_i</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/creator_dcm.v" Line 72: Assignment to <arg fmt="%s" index="1">locked_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/creator_dcm.v" Line 73: Assignment to <arg fmt="%s" index="1">status_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 133: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_conbus/conbus.v" Line 282: Result of <arg fmt="%d" index="1">40</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">38</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 239: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">m1_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">14</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 245: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">m2_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">14</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 251: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">m3_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">14</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 257: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">m4_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">14</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 263: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">m5_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">14</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 269: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">m6_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">14</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 285: Assignment to <arg fmt="%s" index="1">uart0_dat_w</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 286: Assignment to <arg fmt="%s" index="1">uart0_adr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 287: Assignment to <arg fmt="%s" index="1">uart0_sel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 288: Assignment to <arg fmt="%s" index="1">uart0_we</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 289: Assignment to <arg fmt="%s" index="1">uart0_cyc</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 290: Assignment to <arg fmt="%s" index="1">uart0_stb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 294: Assignment to <arg fmt="%s" index="1">uart1_dat_w</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 295: Assignment to <arg fmt="%s" index="1">uart1_adr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 296: Assignment to <arg fmt="%s" index="1">uart1_sel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 297: Assignment to <arg fmt="%s" index="1">uart1_we</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 298: Assignment to <arg fmt="%s" index="1">uart1_cyc</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 299: Assignment to <arg fmt="%s" index="1">uart1_stb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 323: Assignment to <arg fmt="%s" index="1">gpio0_sel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 332: Assignment to <arg fmt="%s" index="1">spi1_sel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi_berry/spi2ad_bus_sync.v" Line 85: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 403: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">pwm_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">11</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 434: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">14</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 77: Port <arg fmt="%s" index="1">dat_a_out</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop.v" Line 56: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/everloop.v" Line 67: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 85: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">adr_a</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">11</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 91: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">adr_b</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">11</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 108: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 114: Result of <arg fmt="%d" index="1">12</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v" Line 150: Assignment to <arg fmt="%s" index="1">CR</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/core_clk.v" Line 36: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/pwm.v" Line 61: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 120: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">duty</arg>&gt;. Formal port size is <arg fmt="%d" index="2">65</arg>-bit while actual signal size is <arg fmt="%d" index="1">64</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 120: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">duty</arg>&gt;. Formal port size is <arg fmt="%d" index="2">65</arg>-bit while actual signal size is <arg fmt="%d" index="1">64</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 120: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">duty</arg>&gt;. Formal port size is <arg fmt="%d" index="2">65</arg>-bit while actual signal size is <arg fmt="%d" index="1">64</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 120: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">duty</arg>&gt;. Formal port size is <arg fmt="%d" index="2">65</arg>-bit while actual signal size is <arg fmt="%d" index="1">64</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/timer_core.v" Line 52: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 149: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sig1</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">11</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 152: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sig2</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">11</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 199: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 200: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_gpio/wb_gpio.v" Line 202: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi/spi.v" Line 62: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_spi/spi.v" Line 75: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 506: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">14</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 159: Net &lt;<arg fmt="%s" index="1">uart0_dat_r[15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 161: Net &lt;<arg fmt="%s" index="1">uart1_dat_r[15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 225: Input port <arg fmt="%s" index="1">m1_cti_i[2]</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 461: Input port <arg fmt="%s" index="1">led_fb</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v" Line 502: Input port <arg fmt="%s" index="1">wb_sel_i[3]</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m1_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m2_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m3_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m4_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m5_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m6_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s3_dat_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m1_we_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m2_we_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m3_we_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m4_we_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m5_we_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m6_we_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s0_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s1_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s2_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s3_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s4_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s5_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s6_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s7_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">led_fb</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">everloop0</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">wb_sel_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">spi1</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">118</arg>: Output port &lt;<arg fmt="%s" index="3">clk_out_25</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dcm</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m1_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m2_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m3_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m4_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m5_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m6_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s1_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s1_adr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s1_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s2_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s2_adr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s2_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s3_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s3_adr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s3_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s6_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s6_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s7_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m0_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m1_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m2_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m3_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m4_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m5_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">m6_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s1_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cyc_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s1_stb_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s2_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cyc_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s2_stb_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s3_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cyc_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">s3_stb_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">355</arg>: Output port &lt;<arg fmt="%s" index="3">rd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/system.v</arg>&quot; line <arg fmt="%s" index="2">482</arg>: Output port &lt;<arg fmt="%s" index="3">wb_ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">gpio0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">uart0_dat_r</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">uart1_dat_r</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">s5_ack_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">s6_ack_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">s7_ack_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">resetn</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">pwm_addr&lt;7:5&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">pwm_nrd</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;13:10&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_sel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_sel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;13:9&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_sel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">led_fb</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gaby/Documentos/Tesis/PruebaMatrixPWM/fpga/creator_core/rtl/wb_everloop/wb_everloop.v</arg>&quot; line <arg fmt="%s" index="2">81</arg>: Output port &lt;<arg fmt="%s" index="3">dat_a_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">everloopram0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">wb_dat_o</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">dat_a_out</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="3015" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">ram</arg>&gt; may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;13:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">wb_ack_o</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">duty&lt;64:64&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;15:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_sel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">pwm_stage[3].pwm0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[11].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_out</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[12].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_out</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[13].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_out</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[14].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_out</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[15].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_out</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[4].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[5].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[6].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[7].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[8].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[9].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[10].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[11].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[12].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[13].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[14].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">gpio_selector[15].mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux_in</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">SSELr_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">spi0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_prescaler_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_prescaler_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_prescaler_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_prescaler_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gpio0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">SSELr_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">spi2ad_bus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">timer_conf_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_prescaler_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_prescaler_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_prescaler_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_prescaler_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_11_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_12_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_13_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_14_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_duty_15_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">core_clk_bank_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">conbus_arb/state_FSM_FFd1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">conbus</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">conbus_arb/state_FSM_FFd3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">conbus</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">conbus_arb/state_FSM_FFd2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">conbus</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pwm_period_3_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_gpio</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ram</arg> in unit <arg fmt="%s" index="2">wb_mcu_bram</arg> of type <arg fmt="%s" index="3">RAMB16_S9_S18</arg> has been replaced by <arg fmt="%s" index="4">RAMB16BWER</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_0&gt; &lt;pwm_controller0/pwm2/counter_0&gt; &lt;pwm_controller0/pwm1/counter_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_1&gt; &lt;pwm_controller0/pwm2/counter_1&gt; &lt;pwm_controller0/pwm1/counter_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/avail</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/avail&gt; &lt;pwm_controller0/pwm2/avail&gt; &lt;pwm_controller0/pwm1/avail&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_2&gt; &lt;pwm_controller0/pwm2/counter_2&gt; &lt;pwm_controller0/pwm1/counter_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_3&gt; &lt;pwm_controller0/pwm2/counter_3&gt; &lt;pwm_controller0/pwm1/counter_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_4&gt; &lt;pwm_controller0/pwm2/counter_4&gt; &lt;pwm_controller0/pwm1/counter_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_5&gt; &lt;pwm_controller0/pwm2/counter_5&gt; &lt;pwm_controller0/pwm1/counter_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_6&gt; &lt;pwm_controller0/pwm2/counter_6&gt; &lt;pwm_controller0/pwm1/counter_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_7&gt; &lt;pwm_controller0/pwm2/counter_7&gt; &lt;pwm_controller0/pwm1/counter_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_8&gt; &lt;pwm_controller0/pwm2/counter_8&gt; &lt;pwm_controller0/pwm1/counter_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_9&gt; &lt;pwm_controller0/pwm2/counter_9&gt; &lt;pwm_controller0/pwm1/counter_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_10&gt; &lt;pwm_controller0/pwm2/period_reg_10&gt; &lt;pwm_controller0/pwm1/period_reg_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_11&gt; &lt;pwm_controller0/pwm2/period_reg_11&gt; &lt;pwm_controller0/pwm1/period_reg_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_12&gt; &lt;pwm_controller0/pwm2/period_reg_12&gt; &lt;pwm_controller0/pwm1/period_reg_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_13&gt; &lt;pwm_controller0/pwm2/period_reg_13&gt; &lt;pwm_controller0/pwm1/period_reg_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_14&gt; &lt;pwm_controller0/pwm2/period_reg_14&gt; &lt;pwm_controller0/pwm1/period_reg_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_20&gt; &lt;pwm_controller0/pwm2/period_reg_20&gt; &lt;pwm_controller0/pwm1/period_reg_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_15&gt; &lt;pwm_controller0/pwm2/period_reg_15&gt; &lt;pwm_controller0/pwm1/period_reg_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_21&gt; &lt;pwm_controller0/pwm2/period_reg_21&gt; &lt;pwm_controller0/pwm1/period_reg_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_16&gt; &lt;pwm_controller0/pwm2/period_reg_16&gt; &lt;pwm_controller0/pwm1/period_reg_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_22&gt; &lt;pwm_controller0/pwm2/period_reg_22&gt; &lt;pwm_controller0/pwm1/period_reg_22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_17&gt; &lt;pwm_controller0/pwm2/period_reg_17&gt; &lt;pwm_controller0/pwm1/period_reg_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_23&gt; &lt;pwm_controller0/pwm2/period_reg_23&gt; &lt;pwm_controller0/pwm1/period_reg_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_18&gt; &lt;pwm_controller0/pwm2/period_reg_18&gt; &lt;pwm_controller0/pwm1/period_reg_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_19&gt; &lt;pwm_controller0/pwm2/period_reg_19&gt; &lt;pwm_controller0/pwm1/period_reg_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_10&gt; &lt;pwm_controller0/pwm2/counter_10&gt; &lt;pwm_controller0/pwm1/counter_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_11&gt; &lt;pwm_controller0/pwm2/counter_11&gt; &lt;pwm_controller0/pwm1/counter_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_12&gt; &lt;pwm_controller0/pwm2/counter_12&gt; &lt;pwm_controller0/pwm1/counter_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_13&gt; &lt;pwm_controller0/pwm2/counter_13&gt; &lt;pwm_controller0/pwm1/counter_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_14&gt; &lt;pwm_controller0/pwm2/counter_14&gt; &lt;pwm_controller0/pwm1/counter_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_20&gt; &lt;pwm_controller0/pwm2/counter_20&gt; &lt;pwm_controller0/pwm1/counter_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_15&gt; &lt;pwm_controller0/pwm2/counter_15&gt; &lt;pwm_controller0/pwm1/counter_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_21&gt; &lt;pwm_controller0/pwm2/counter_21&gt; &lt;pwm_controller0/pwm1/counter_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_16&gt; &lt;pwm_controller0/pwm2/counter_16&gt; &lt;pwm_controller0/pwm1/counter_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_22&gt; &lt;pwm_controller0/pwm2/counter_22&gt; &lt;pwm_controller0/pwm1/counter_22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_17&gt; &lt;pwm_controller0/pwm2/counter_17&gt; &lt;pwm_controller0/pwm1/counter_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_23&gt; &lt;pwm_controller0/pwm2/counter_23&gt; &lt;pwm_controller0/pwm1/counter_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_18&gt; &lt;pwm_controller0/pwm2/counter_18&gt; &lt;pwm_controller0/pwm1/counter_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/counter_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/counter_19&gt; &lt;pwm_controller0/pwm2/counter_19&gt; &lt;pwm_controller0/pwm1/counter_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_0&gt; &lt;pwm_controller0/pwm2/period_reg_0&gt; &lt;pwm_controller0/pwm1/period_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_1&gt; &lt;pwm_controller0/pwm2/period_reg_1&gt; &lt;pwm_controller0/pwm1/period_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_2&gt; &lt;pwm_controller0/pwm2/period_reg_2&gt; &lt;pwm_controller0/pwm1/period_reg_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_3&gt; &lt;pwm_controller0/pwm2/period_reg_3&gt; &lt;pwm_controller0/pwm1/period_reg_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_4&gt; &lt;pwm_controller0/pwm2/period_reg_4&gt; &lt;pwm_controller0/pwm1/period_reg_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_5&gt; &lt;pwm_controller0/pwm2/period_reg_5&gt; &lt;pwm_controller0/pwm1/period_reg_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_6&gt; &lt;pwm_controller0/pwm2/period_reg_6&gt; &lt;pwm_controller0/pwm1/period_reg_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_7&gt; &lt;pwm_controller0/pwm2/period_reg_7&gt; &lt;pwm_controller0/pwm1/period_reg_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_8&gt; &lt;pwm_controller0/pwm2/period_reg_8&gt; &lt;pwm_controller0/pwm1/period_reg_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm3/period_reg_9&gt; &lt;pwm_controller0/pwm2/period_reg_9&gt; &lt;pwm_controller0/pwm1/period_reg_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_0_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_0_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_0_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_1_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_1_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_1_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_1_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_2_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_2_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_2_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_2_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_3_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_3_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_3_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_3_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_4_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_4_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_4_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_4_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_5_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_5_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_5_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_5_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_6_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_6_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_6_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_6_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_7_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_7_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_7_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_7_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_8_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_8_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_8_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_8_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_9_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_9_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_9_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_9_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_10_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_10_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_10_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_10_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_11_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_11_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_11_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_11_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_12_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_12_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_12_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_12_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_13_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_13_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_13_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_13_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_14_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_14_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_14_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_14_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_15_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_15_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_15_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_15_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_20_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_20_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_20_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_20_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_16_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_16_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_16_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_16_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_21_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_21_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_21_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_21_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_17_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_17_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_17_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_17_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_22_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_22_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_22_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_22_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_18_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_18_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_18_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_18_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_23_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_23_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_23_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_23_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_controller0/pwm4/period_reg_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_controller0/pwm4/timeWork_reg_19_BRB1&gt; &lt;pwm_controller0/pwm3/timeWork_reg_19_BRB1&gt; &lt;pwm_controller0/pwm2/timeWork_reg_19_BRB1&gt; &lt;pwm_controller0/pwm1/timeWork_reg_19_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

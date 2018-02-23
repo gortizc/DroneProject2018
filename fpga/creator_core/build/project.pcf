@@ -1,0 +1,898 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Feb 23 14:24:59 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ss" LOCATE = SITE "P116" LEVEL 1;
+COMP "IR_RING_EN" LOCATE = SITE "P143" LEVEL 1;
+COMP "sck" LOCATE = SITE "P115" LEVEL 1;
+COMP "mcu_sram_data<0>" LOCATE = SITE "P6" LEVEL 1;
+COMP "mcu_sram_data<1>" LOCATE = SITE "P117" LEVEL 1;
+COMP "mcu_sram_data<2>" LOCATE = SITE "P121" LEVEL 1;
+COMP "mcu_sram_data<3>" LOCATE = SITE "P124" LEVEL 1;
+COMP "mcu_sram_data<4>" LOCATE = SITE "P127" LEVEL 1;
+COMP "mcu_sram_data<5>" LOCATE = SITE "P131" LEVEL 1;
+COMP "mcu_sram_data<6>" LOCATE = SITE "P132" LEVEL 1;
+COMP "mcu_sram_data<7>" LOCATE = SITE "P137" LEVEL 1;
+COMP "miso" LOCATE = SITE "P114" LEVEL 1;
+COMP "pwm1" LOCATE = SITE "P78" LEVEL 1;
+COMP "pwm2" LOCATE = SITE "P79" LEVEL 1;
+COMP "pwm3" LOCATE = SITE "P80" LEVEL 1;
+COMP "pwm4" LOCATE = SITE "P81" LEVEL 1;
+COMP "UART_RX_PI" LOCATE = SITE "P69" LEVEL 1;
+COMP "debug_led" LOCATE = SITE "P39" LEVEL 1;
+COMP "mosi" LOCATE = SITE "P112" LEVEL 1;
+COMP "UART_TX_PI" LOCATE = SITE "P70" LEVEL 1;
+COMP "RX_IR" LOCATE = SITE "P144" LEVEL 1;
+COMP "RX_PI" LOCATE = SITE "P119" LEVEL 1;
+COMP "TX_IR" LOCATE = SITE "P118" LEVEL 1;
+COMP "TX_PI" LOCATE = SITE "P120" LEVEL 1;
+COMP "mcu_addr<10>" LOCATE = SITE "P100" LEVEL 1;
+COMP "nfc_irq" LOCATE = SITE "P140" LEVEL 1;
+COMP "nfc_sck" LOCATE = SITE "P126" LEVEL 1;
+COMP "nfc_rst" LOCATE = SITE "P111" LEVEL 1;
+COMP "mcu_ncs" LOCATE = SITE "P8" LEVEL 1;
+COMP "mcu_nrd" LOCATE = SITE "P87" LEVEL 1;
+COMP "mcu_nwe" LOCATE = SITE "P97" LEVEL 1;
+COMP "laptop_RX" LOCATE = SITE "P82" LEVEL 1;
+COMP "IR_RING_EN_PI" LOCATE = SITE "P138" LEVEL 1;
+COMP "SAM_RX" LOCATE = SITE "P5" LEVEL 1;
+COMP "SAM_TX" LOCATE = SITE "P2" LEVEL 1;
+COMP "gpio_io<10>" LOCATE = SITE "P102" LEVEL 1;
+COMP "everloop_ctl" LOCATE = SITE "P56" LEVEL 1;
+COMP "clk_50" LOCATE = SITE "P84" LEVEL 1;
+COMP "mcu_addr<0>" LOCATE = SITE "P66" LEVEL 1;
+COMP "mcu_addr<1>" LOCATE = SITE "P62" LEVEL 1;
+COMP "mcu_addr<2>" LOCATE = SITE "P61" LEVEL 1;
+COMP "mcu_addr<3>" LOCATE = SITE "P60" LEVEL 1;
+COMP "mcu_addr<4>" LOCATE = SITE "P57" LEVEL 1;
+COMP "mcu_addr<5>" LOCATE = SITE "P51" LEVEL 1;
+COMP "mcu_addr<6>" LOCATE = SITE "P50" LEVEL 1;
+COMP "mcu_addr<7>" LOCATE = SITE "P48" LEVEL 1;
+COMP "mcu_addr<8>" LOCATE = SITE "P17" LEVEL 1;
+COMP "mcu_addr<9>" LOCATE = SITE "P14" LEVEL 1;
+COMP "nfc_cs" LOCATE = SITE "P141" LEVEL 1;
+COMP "nfc_miso" LOCATE = SITE "P134" LEVEL 1;
+COMP "resetn" LOCATE = SITE "P123" LEVEL 1;
+COMP "nfc_mosi" LOCATE = SITE "P133" LEVEL 1;
+COMP "gpio_io<0>" LOCATE = SITE "P83" LEVEL 1;
+COMP "gpio_io<1>" LOCATE = SITE "P85" LEVEL 1;
+COMP "gpio_io<2>" LOCATE = SITE "P88" LEVEL 1;
+COMP "gpio_io<3>" LOCATE = SITE "P92" LEVEL 1;
+COMP "gpio_io<4>" LOCATE = SITE "P93" LEVEL 1;
+COMP "gpio_io<5>" LOCATE = SITE "P94" LEVEL 1;
+COMP "gpio_io<6>" LOCATE = SITE "P95" LEVEL 1;
+COMP "gpio_io<7>" LOCATE = SITE "P98" LEVEL 1;
+COMP "gpio_io<8>" LOCATE = SITE "P99" LEVEL 1;
+COMP "gpio_io<9>" LOCATE = SITE "P101" LEVEL 1;
+COMP "IRQ_NFC" LOCATE = SITE "P1" LEVEL 1;
+PIN bram0/Mram_ram_pins<10> = BEL "bram0/Mram_ram" PINNAME CLKA;
+PIN mcu_bram0/ram_pins<22> = BEL "mcu_bram0/ram" PINNAME CLKB;
+PIN everloop0/everloopram0/Mram_ram_pins<20> = BEL
+        "everloop0/everloopram0/Mram_ram" PINNAME CLKAWRCLK;
+PIN everloop0/everloopram0/Mram_ram_pins<21> = BEL
+        "everloop0/everloopram0/Mram_ram" PINNAME CLKBRDCLK;
+TIMEGRP dcm_clkfx = BEL "counter_0" BEL "counter_1" BEL "counter_2" BEL
+        "counter_3" BEL "counter_4" BEL "counter_5" BEL "counter_6" BEL
+        "counter_7" BEL "counter_8" BEL "counter_9" BEL "counter_10" BEL
+        "counter_11" BEL "counter_12" BEL "counter_13" BEL "counter_14" BEL
+        "counter_15" BEL "counter_16" BEL "counter_17" BEL "counter_18" BEL
+        "counter_19" BEL "counter_20" BEL "counter_21" BEL "counter_22" BEL
+        "counter_23" BEL "counter_24" BEL "counter_25" BEL "dcm/clkout1_buf"
+        BEL "gpio0/coreclk0/core_clk_15" BEL "gpio0/coreclk0/core_clk_14" BEL
+        "gpio0/coreclk0/core_clk_13" BEL "gpio0/coreclk0/core_clk_12" BEL
+        "gpio0/coreclk0/core_clk_11" BEL "gpio0/coreclk0/core_clk_10" BEL
+        "gpio0/coreclk0/core_clk_9" BEL "gpio0/coreclk0/core_clk_8" BEL
+        "gpio0/coreclk0/core_clk_7" BEL "gpio0/coreclk0/core_clk_6" BEL
+        "gpio0/coreclk0/core_clk_5" BEL "gpio0/coreclk0/core_clk_4" BEL
+        "gpio0/coreclk0/core_clk_3" BEL "gpio0/coreclk0/core_clk_2" BEL
+        "gpio0/coreclk0/core_clk_1" BEL "gpio0/coreclk0/core_clk_0" BEL
+        "gpio0/pwm_period_3_63" BEL "gpio0/pwm_period_3_62" BEL
+        "gpio0/pwm_period_3_61" BEL "gpio0/pwm_period_3_60" BEL
+        "gpio0/pwm_period_3_59" BEL "gpio0/pwm_period_3_58" BEL
+        "gpio0/pwm_period_3_57" BEL "gpio0/pwm_period_3_56" BEL
+        "gpio0/pwm_period_3_55" BEL "gpio0/pwm_period_3_54" BEL
+        "gpio0/pwm_period_3_53" BEL "gpio0/pwm_period_3_52" BEL
+        "gpio0/pwm_period_3_51" BEL "gpio0/pwm_period_3_50" BEL
+        "gpio0/pwm_period_3_49" BEL "gpio0/pwm_period_3_48" BEL
+        "gpio0/pwm_period_3_47" BEL "gpio0/pwm_period_3_46" BEL
+        "gpio0/pwm_period_3_45" BEL "gpio0/pwm_period_3_44" BEL
+        "gpio0/pwm_period_3_43" BEL "gpio0/pwm_period_3_42" BEL
+        "gpio0/pwm_period_3_41" BEL "gpio0/pwm_period_3_40" BEL
+        "gpio0/pwm_period_3_39" BEL "gpio0/pwm_period_3_38" BEL
+        "gpio0/pwm_period_3_37" BEL "gpio0/pwm_period_3_36" BEL
+        "gpio0/pwm_period_3_35" BEL "gpio0/pwm_period_3_34" BEL
+        "gpio0/pwm_period_3_33" BEL "gpio0/pwm_period_3_32" BEL
+        "gpio0/pwm_period_3_31" BEL "gpio0/pwm_period_3_30" BEL
+        "gpio0/pwm_period_3_29" BEL "gpio0/pwm_period_3_28" BEL
+        "gpio0/pwm_period_3_27" BEL "gpio0/pwm_period_3_26" BEL
+        "gpio0/pwm_period_3_25" BEL "gpio0/pwm_period_3_24" BEL
+        "gpio0/pwm_period_3_23" BEL "gpio0/pwm_period_3_22" BEL
+        "gpio0/pwm_period_3_21" BEL "gpio0/pwm_period_3_20" BEL
+        "gpio0/pwm_period_3_19" BEL "gpio0/pwm_period_3_18" BEL
+        "gpio0/pwm_period_3_17" BEL "gpio0/pwm_period_3_16" BEL
+        "gpio0/core_clk_bank_0" BEL "gpio0/core_clk_bank_2" BEL
+        "gpio0/core_clk_bank_1" BEL "gpio0/wb_dat_o_15" BEL
+        "gpio0/wb_dat_o_14" BEL "gpio0/wb_dat_o_13" BEL "gpio0/wb_dat_o_12"
+        BEL "gpio0/wb_dat_o_11" BEL "gpio0/wb_dat_o_10" BEL "gpio0/wb_dat_o_9"
+        BEL "gpio0/wb_dat_o_8" BEL "gpio0/wb_dat_o_7" BEL "gpio0/wb_dat_o_6"
+        BEL "gpio0/wb_dat_o_5" BEL "gpio0/wb_dat_o_4" BEL "gpio0/wb_dat_o_3"
+        BEL "gpio0/wb_dat_o_2" BEL "gpio0/wb_dat_o_1" BEL "gpio0/wb_dat_o_0"
+        BEL "gpio0/pwm_duty_10_0" BEL "gpio0/pwm_duty_10_1" BEL
+        "gpio0/pwm_duty_10_2" BEL "gpio0/pwm_duty_10_3" BEL
+        "gpio0/pwm_duty_10_4" BEL "gpio0/pwm_duty_10_5" BEL
+        "gpio0/pwm_duty_10_6" BEL "gpio0/pwm_duty_10_7" BEL
+        "gpio0/pwm_duty_10_8" BEL "gpio0/pwm_duty_10_9" BEL
+        "gpio0/pwm_duty_10_10" BEL "gpio0/pwm_duty_10_11" BEL
+        "gpio0/pwm_duty_10_13" BEL "gpio0/pwm_duty_10_14" BEL
+        "gpio0/pwm_duty_10_12" BEL "gpio0/pwm_duty_10_15" BEL
+        "gpio0/pwm_duty_9_0" BEL "gpio0/pwm_duty_9_1" BEL "gpio0/pwm_duty_9_2"
+        BEL "gpio0/pwm_duty_9_3" BEL "gpio0/pwm_duty_9_4" BEL
+        "gpio0/pwm_duty_9_6" BEL "gpio0/pwm_duty_9_7" BEL "gpio0/pwm_duty_9_5"
+        BEL "gpio0/pwm_duty_9_8" BEL "gpio0/pwm_duty_9_9" BEL
+        "gpio0/pwm_duty_9_10" BEL "gpio0/pwm_duty_9_11" BEL
+        "gpio0/pwm_duty_9_12" BEL "gpio0/pwm_duty_9_13" BEL
+        "gpio0/pwm_duty_9_15" BEL "gpio0/pwm_duty_8_0" BEL
+        "gpio0/pwm_duty_9_14" BEL "gpio0/pwm_duty_8_1" BEL
+        "gpio0/pwm_duty_8_2" BEL "gpio0/pwm_duty_8_3" BEL "gpio0/pwm_duty_8_4"
+        BEL "gpio0/pwm_duty_8_5" BEL "gpio0/pwm_duty_8_6" BEL
+        "gpio0/pwm_duty_8_7" BEL "gpio0/pwm_duty_8_8" BEL "gpio0/pwm_duty_8_9"
+        BEL "gpio0/pwm_duty_8_10" BEL "gpio0/pwm_duty_8_11" BEL
+        "gpio0/pwm_duty_8_12" BEL "gpio0/pwm_duty_8_13" BEL
+        "gpio0/pwm_duty_8_14" BEL "gpio0/pwm_duty_7_0" BEL
+        "gpio0/pwm_duty_7_1" BEL "gpio0/pwm_duty_8_15" BEL
+        "gpio0/pwm_duty_7_2" BEL "gpio0/pwm_duty_7_3" BEL "gpio0/pwm_duty_7_4"
+        BEL "gpio0/pwm_duty_7_5" BEL "gpio0/pwm_duty_7_6" BEL
+        "gpio0/pwm_duty_7_7" BEL "gpio0/pwm_duty_7_8" BEL "gpio0/pwm_duty_7_9"
+        BEL "gpio0/pwm_duty_7_10" BEL "gpio0/pwm_duty_7_11" BEL
+        "gpio0/pwm_duty_7_12" BEL "gpio0/pwm_duty_7_13" BEL
+        "gpio0/pwm_duty_7_14" BEL "gpio0/pwm_duty_7_15" BEL
+        "gpio0/pwm_duty_6_1" BEL "gpio0/pwm_duty_6_2" BEL "gpio0/pwm_duty_6_0"
+        BEL "gpio0/pwm_duty_6_3" BEL "gpio0/pwm_duty_6_4" BEL
+        "gpio0/pwm_duty_6_5" BEL "gpio0/pwm_duty_6_6" BEL "gpio0/pwm_duty_6_7"
+        BEL "gpio0/pwm_duty_6_8" BEL "gpio0/pwm_duty_6_9" BEL
+        "gpio0/pwm_duty_6_10" BEL "gpio0/pwm_duty_6_11" BEL
+        "gpio0/pwm_duty_6_12" BEL "gpio0/pwm_duty_6_13" BEL
+        "gpio0/pwm_duty_6_14" BEL "gpio0/pwm_duty_6_15" BEL
+        "gpio0/pwm_duty_5_0" BEL "gpio0/pwm_duty_5_2" BEL "gpio0/pwm_duty_5_3"
+        BEL "gpio0/pwm_duty_5_1" BEL "gpio0/pwm_duty_5_4" BEL
+        "gpio0/pwm_duty_5_5" BEL "gpio0/pwm_duty_5_6" BEL "gpio0/pwm_duty_5_7"
+        BEL "gpio0/pwm_duty_5_8" BEL "gpio0/pwm_duty_5_9" BEL
+        "gpio0/pwm_duty_5_11" BEL "gpio0/pwm_duty_5_12" BEL
+        "gpio0/pwm_duty_5_10" BEL "gpio0/pwm_duty_5_13" BEL
+        "gpio0/pwm_duty_5_14" BEL "gpio0/pwm_duty_5_15" BEL
+        "gpio0/pwm_duty_4_0" BEL "gpio0/pwm_duty_4_1" BEL "gpio0/pwm_duty_4_2"
+        BEL "gpio0/pwm_duty_4_4" BEL "gpio0/pwm_duty_4_5" BEL
+        "gpio0/pwm_duty_4_3" BEL "gpio0/pwm_duty_4_6" BEL "gpio0/pwm_duty_4_7"
+        BEL "gpio0/pwm_duty_4_8" BEL "gpio0/pwm_duty_4_9" BEL
+        "gpio0/pwm_duty_4_10" BEL "gpio0/pwm_duty_4_11" BEL
+        "gpio0/pwm_duty_4_12" BEL "gpio0/pwm_duty_4_13" BEL
+        "gpio0/pwm_duty_4_14" BEL "gpio0/pwm_duty_4_15" BEL
+        "gpio0/pwm_duty_2_0" BEL "gpio0/pwm_duty_2_1" BEL "gpio0/pwm_duty_2_2"
+        BEL "gpio0/pwm_duty_2_3" BEL "gpio0/pwm_duty_2_5" BEL
+        "gpio0/pwm_duty_2_6" BEL "gpio0/pwm_duty_2_4" BEL "gpio0/pwm_duty_2_7"
+        BEL "gpio0/pwm_duty_2_8" BEL "gpio0/pwm_duty_2_9" BEL
+        "gpio0/pwm_duty_2_10" BEL "gpio0/pwm_duty_2_11" BEL
+        "gpio0/pwm_duty_2_12" BEL "gpio0/pwm_duty_2_14" BEL
+        "gpio0/pwm_duty_2_15" BEL "gpio0/pwm_duty_2_13" BEL
+        "gpio0/pwm_duty_1_0" BEL "gpio0/pwm_duty_1_1" BEL "gpio0/pwm_duty_1_2"
+        BEL "gpio0/pwm_duty_1_3" BEL "gpio0/pwm_duty_1_4" BEL
+        "gpio0/pwm_duty_1_5" BEL "gpio0/pwm_duty_1_7" BEL "gpio0/pwm_duty_1_8"
+        BEL "gpio0/pwm_duty_1_6" BEL "gpio0/pwm_duty_1_9" BEL
+        "gpio0/pwm_duty_1_10" BEL "gpio0/pwm_duty_1_11" BEL
+        "gpio0/pwm_duty_1_12" BEL "gpio0/pwm_duty_1_13" BEL
+        "gpio0/pwm_duty_1_14" BEL "gpio0/pwm_duty_1_15" BEL
+        "gpio0/pwm_duty_0_0" BEL "gpio0/pwm_duty_0_1" BEL "gpio0/pwm_duty_0_2"
+        BEL "gpio0/pwm_duty_0_3" BEL "gpio0/pwm_duty_0_4" BEL
+        "gpio0/pwm_duty_0_5" BEL "gpio0/pwm_duty_0_6" BEL "gpio0/pwm_duty_0_8"
+        BEL "gpio0/pwm_duty_0_9" BEL "gpio0/pwm_duty_0_7" BEL
+        "gpio0/pwm_duty_0_10" BEL "gpio0/pwm_duty_0_11" BEL
+        "gpio0/pwm_duty_0_12" BEL "gpio0/pwm_duty_0_13" BEL
+        "gpio0/pwm_duty_0_14" BEL "gpio0/pwm_duty_0_15" BEL
+        "gpio0/gpio_function_10" BEL "gpio0/gpio_function_9" BEL
+        "gpio0/gpio_function_8" BEL "gpio0/gpio_function_7" BEL
+        "gpio0/gpio_function_6" BEL "gpio0/gpio_function_5" BEL
+        "gpio0/gpio_function_4" BEL "gpio0/gpio_function_3" BEL
+        "gpio0/gpio_function_2" BEL "gpio0/gpio_function_1" BEL
+        "gpio0/gpio_function_0" BEL "gpio0/gpio_out_10" BEL "gpio0/gpio_out_9"
+        BEL "gpio0/gpio_out_8" BEL "gpio0/gpio_out_7" BEL "gpio0/gpio_out_6"
+        BEL "gpio0/gpio_out_5" BEL "gpio0/gpio_out_4" BEL "gpio0/gpio_out_3"
+        BEL "gpio0/gpio_out_2" BEL "gpio0/gpio_out_1" BEL "gpio0/gpio_out_0"
+        BEL "gpio0/gpio_dir_10" BEL "gpio0/gpio_dir_9" BEL "gpio0/gpio_dir_8"
+        BEL "gpio0/gpio_dir_7" BEL "gpio0/gpio_dir_6" BEL "gpio0/gpio_dir_5"
+        BEL "gpio0/gpio_dir_4" BEL "gpio0/gpio_dir_3" BEL "gpio0/gpio_dir_2"
+        BEL "gpio0/gpio_dir_1" BEL "gpio0/gpio_dir_0" BEL "gpio0/timer_conf_7"
+        BEL "gpio0/timer_conf_6" BEL "gpio0/timer_conf_5" BEL
+        "gpio0/timer_conf_4" BEL "gpio0/timer_conf_3" BEL "gpio0/timer_conf_2"
+        BEL "gpio0/timer_conf_1" BEL "gpio0/timer_conf_0" BEL
+        "gpio0/core_prescaler_11" BEL "gpio0/core_prescaler_10" BEL
+        "gpio0/core_prescaler_9" BEL "gpio0/core_prescaler_8" BEL
+        "gpio0/core_prescaler_7" BEL "gpio0/core_prescaler_6" BEL
+        "gpio0/core_prescaler_5" BEL "gpio0/core_prescaler_4" BEL
+        "gpio0/core_prescaler_3" BEL "gpio0/core_prescaler_2" BEL
+        "gpio0/core_prescaler_1" BEL "gpio0/core_prescaler_0" BEL
+        "spi0/bit_count_4" BEL "spi0/bit_count_3" BEL "spi0/bit_count_2" BEL
+        "spi0/bit_count_1" BEL "spi0/bit_count_0" BEL "spi0/miso_sr_15" BEL
+        "spi0/miso_sr_14" BEL "spi0/miso_sr_13" BEL "spi0/miso_sr_12" BEL
+        "spi0/miso_sr_11" BEL "spi0/miso_sr_10" BEL "spi0/miso_sr_9" BEL
+        "spi0/miso_sr_8" BEL "spi0/miso_sr_7" BEL "spi0/miso_sr_6" BEL
+        "spi0/miso_sr_5" BEL "spi0/miso_sr_4" BEL "spi0/miso_sr_3" BEL
+        "spi0/miso_sr_2" BEL "spi0/miso_sr_1" BEL "spi0/miso_sr_0" BEL
+        "spi0/data_in_latched_15" BEL "spi0/data_in_latched_14" BEL
+        "spi0/data_in_latched_13" BEL "spi0/data_in_latched_12" BEL
+        "spi0/data_in_latched_11" BEL "spi0/data_in_latched_10" BEL
+        "spi0/data_in_latched_9" BEL "spi0/data_in_latched_8" BEL
+        "spi0/data_in_latched_7" BEL "spi0/data_in_latched_6" BEL
+        "spi0/data_in_latched_5" BEL "spi0/data_in_latched_4" BEL
+        "spi0/data_in_latched_3" BEL "spi0/data_in_latched_2" BEL
+        "spi0/data_in_latched_1" BEL "spi0/data_in_latched_0" BEL
+        "spi0/auto_inc" BEL "spi0/rd_wrn" BEL "spi0/addr_bus_latched_13" BEL
+        "spi0/addr_bus_latched_12" BEL "spi0/addr_bus_latched_11" BEL
+        "spi0/addr_bus_latched_10" BEL "spi0/addr_bus_latched_9" BEL
+        "spi0/addr_bus_latched_8" BEL "spi0/addr_bus_latched_7" BEL
+        "spi0/addr_bus_latched_6" BEL "spi0/addr_bus_latched_5" BEL
+        "spi0/addr_bus_latched_4" BEL "spi0/addr_bus_latched_3" BEL
+        "spi0/addr_bus_latched_2" BEL "spi0/addr_bus_latched_1" BEL
+        "spi0/addr_bus_latched_0" BEL "spi0/data_out_sr_15" BEL
+        "spi0/data_out_sr_14" BEL "spi0/data_out_sr_13" BEL
+        "spi0/data_out_sr_12" BEL "spi0/data_out_sr_11" BEL
+        "spi0/data_out_sr_10" BEL "spi0/data_out_sr_9" BEL
+        "spi0/data_out_sr_8" BEL "spi0/data_out_sr_7" BEL "spi0/data_out_sr_6"
+        BEL "spi0/data_out_sr_5" BEL "spi0/data_out_sr_4" BEL
+        "spi0/data_out_sr_3" BEL "spi0/data_out_sr_2" BEL "spi0/data_out_sr_1"
+        BEL "spi0/data_out_sr_0" BEL "spi0/data_in_sr_15" BEL
+        "spi0/data_in_sr_14" BEL "spi0/data_in_sr_13" BEL "spi0/data_in_sr_12"
+        BEL "spi0/data_in_sr_11" BEL "spi0/data_in_sr_10" BEL
+        "spi0/data_in_sr_9" BEL "spi0/data_in_sr_8" BEL "spi0/data_in_sr_7"
+        BEL "spi0/data_in_sr_6" BEL "spi0/data_in_sr_5" BEL
+        "spi0/data_in_sr_4" BEL "spi0/data_in_sr_3" BEL "spi0/data_in_sr_2"
+        BEL "spi0/data_in_sr_1" BEL "spi0/data_in_sr_0" BEL "spi0/SCKr_2" BEL
+        "spi0/SCKr_1" BEL "spi0/SCKr_0" BEL "spi0/MOSIr_1" BEL "spi0/MOSIr_0"
+        BEL "spi0/SSELr_1" BEL "spi0/SSELr_0" BEL "pwm_controller0/duty4_23"
+        BEL "pwm_controller0/duty4_22" BEL "pwm_controller0/duty4_21" BEL
+        "pwm_controller0/duty4_20" BEL "pwm_controller0/duty4_19" BEL
+        "pwm_controller0/duty4_18" BEL "pwm_controller0/duty4_17" BEL
+        "pwm_controller0/duty4_16" BEL "pwm_controller0/duty4_15" BEL
+        "pwm_controller0/duty4_14" BEL "pwm_controller0/duty4_13" BEL
+        "pwm_controller0/duty4_12" BEL "pwm_controller0/duty4_11" BEL
+        "pwm_controller0/duty4_10" BEL "pwm_controller0/duty4_9" BEL
+        "pwm_controller0/duty4_8" BEL "pwm_controller0/duty4_7" BEL
+        "pwm_controller0/duty4_6" BEL "pwm_controller0/duty4_5" BEL
+        "pwm_controller0/duty4_4" BEL "pwm_controller0/duty4_3" BEL
+        "pwm_controller0/duty4_2" BEL "pwm_controller0/duty4_1" BEL
+        "pwm_controller0/duty4_0" BEL "pwm_controller0/duty3_23" BEL
+        "pwm_controller0/duty3_22" BEL "pwm_controller0/duty3_21" BEL
+        "pwm_controller0/duty3_20" BEL "pwm_controller0/duty3_19" BEL
+        "pwm_controller0/duty3_18" BEL "pwm_controller0/duty3_17" BEL
+        "pwm_controller0/duty3_16" BEL "pwm_controller0/duty3_15" BEL
+        "pwm_controller0/duty3_14" BEL "pwm_controller0/duty3_13" BEL
+        "pwm_controller0/duty3_12" BEL "pwm_controller0/duty3_11" BEL
+        "pwm_controller0/duty3_10" BEL "pwm_controller0/duty3_9" BEL
+        "pwm_controller0/duty3_8" BEL "pwm_controller0/duty3_7" BEL
+        "pwm_controller0/duty3_6" BEL "pwm_controller0/duty3_5" BEL
+        "pwm_controller0/duty3_4" BEL "pwm_controller0/duty3_3" BEL
+        "pwm_controller0/duty3_2" BEL "pwm_controller0/duty3_1" BEL
+        "pwm_controller0/duty3_0" BEL "pwm_controller0/duty2_23" BEL
+        "pwm_controller0/duty2_22" BEL "pwm_controller0/duty2_21" BEL
+        "pwm_controller0/duty2_20" BEL "pwm_controller0/duty2_19" BEL
+        "pwm_controller0/duty2_18" BEL "pwm_controller0/duty2_17" BEL
+        "pwm_controller0/duty2_16" BEL "pwm_controller0/duty2_15" BEL
+        "pwm_controller0/duty2_14" BEL "pwm_controller0/duty2_13" BEL
+        "pwm_controller0/duty2_12" BEL "pwm_controller0/duty2_11" BEL
+        "pwm_controller0/duty2_10" BEL "pwm_controller0/duty2_9" BEL
+        "pwm_controller0/duty2_8" BEL "pwm_controller0/duty2_7" BEL
+        "pwm_controller0/duty2_6" BEL "pwm_controller0/duty2_5" BEL
+        "pwm_controller0/duty2_4" BEL "pwm_controller0/duty2_3" BEL
+        "pwm_controller0/duty2_2" BEL "pwm_controller0/duty2_1" BEL
+        "pwm_controller0/duty2_0" BEL "pwm_controller0/period_23" BEL
+        "pwm_controller0/period_22" BEL "pwm_controller0/period_21" BEL
+        "pwm_controller0/period_20" BEL "pwm_controller0/period_19" BEL
+        "pwm_controller0/period_18" BEL "pwm_controller0/period_17" BEL
+        "pwm_controller0/period_16" BEL "pwm_controller0/period_15" BEL
+        "pwm_controller0/period_14" BEL "pwm_controller0/period_13" BEL
+        "pwm_controller0/period_12" BEL "pwm_controller0/period_11" BEL
+        "pwm_controller0/period_10" BEL "pwm_controller0/period_9" BEL
+        "pwm_controller0/period_8" BEL "pwm_controller0/period_7" BEL
+        "pwm_controller0/period_6" BEL "pwm_controller0/period_5" BEL
+        "pwm_controller0/period_4" BEL "pwm_controller0/period_3" BEL
+        "pwm_controller0/period_2" BEL "pwm_controller0/period_1" BEL
+        "pwm_controller0/period_0" BEL "pwm_controller0/duty1_23" BEL
+        "pwm_controller0/duty1_22" BEL "pwm_controller0/duty1_21" BEL
+        "pwm_controller0/duty1_20" BEL "pwm_controller0/duty1_19" BEL
+        "pwm_controller0/duty1_18" BEL "pwm_controller0/duty1_17" BEL
+        "pwm_controller0/duty1_16" BEL "pwm_controller0/duty1_15" BEL
+        "pwm_controller0/duty1_14" BEL "pwm_controller0/duty1_13" BEL
+        "pwm_controller0/duty1_12" BEL "pwm_controller0/duty1_11" BEL
+        "pwm_controller0/duty1_10" BEL "pwm_controller0/duty1_9" BEL
+        "pwm_controller0/duty1_8" BEL "pwm_controller0/duty1_7" BEL
+        "pwm_controller0/duty1_6" BEL "pwm_controller0/duty1_5" BEL
+        "pwm_controller0/duty1_4" BEL "pwm_controller0/duty1_3" BEL
+        "pwm_controller0/duty1_2" BEL "pwm_controller0/duty1_1" BEL
+        "pwm_controller0/duty1_0" BEL "pwm_controller0/pwm_wdBus_7" BEL
+        "pwm_controller0/pwm_wdBus_6" BEL "pwm_controller0/pwm_wdBus_5" BEL
+        "pwm_controller0/pwm_wdBus_4" BEL "pwm_controller0/pwm_wdBus_3" BEL
+        "pwm_controller0/pwm_wdBus_2" BEL "pwm_controller0/pwm_wdBus_1" BEL
+        "pwm_controller0/pwm_wdBus_0" BEL "pwm_controller0/pwm_sncs" BEL
+        "pwm_controller0/pwm_snwe" BEL "pwm_controller0/pwm_buffer_addr_4" BEL
+        "pwm_controller0/pwm_buffer_addr_3" BEL
+        "pwm_controller0/pwm_buffer_addr_2" BEL
+        "pwm_controller0/pwm_buffer_addr_1" BEL
+        "pwm_controller0/pwm_buffer_addr_0" BEL
+        "pwm_controller0/pwm_buffer_data_7" BEL
+        "pwm_controller0/pwm_buffer_data_6" BEL
+        "pwm_controller0/pwm_buffer_data_5" BEL
+        "pwm_controller0/pwm_buffer_data_4" BEL
+        "pwm_controller0/pwm_buffer_data_3" BEL
+        "pwm_controller0/pwm_buffer_data_2" BEL
+        "pwm_controller0/pwm_buffer_data_1" BEL
+        "pwm_controller0/pwm_buffer_data_0" BEL
+        "pwm_controller0/pwm4/counter_23" BEL
+        "pwm_controller0/pwm4/counter_22" BEL
+        "pwm_controller0/pwm4/counter_21" BEL
+        "pwm_controller0/pwm4/counter_20" BEL
+        "pwm_controller0/pwm4/counter_19" BEL
+        "pwm_controller0/pwm4/counter_18" BEL
+        "pwm_controller0/pwm4/counter_17" BEL
+        "pwm_controller0/pwm4/counter_16" BEL
+        "pwm_controller0/pwm4/counter_15" BEL
+        "pwm_controller0/pwm4/counter_14" BEL
+        "pwm_controller0/pwm4/counter_13" BEL
+        "pwm_controller0/pwm4/counter_12" BEL
+        "pwm_controller0/pwm4/counter_11" BEL
+        "pwm_controller0/pwm4/counter_10" BEL "pwm_controller0/pwm4/counter_9"
+        BEL "pwm_controller0/pwm4/counter_8" BEL
+        "pwm_controller0/pwm4/counter_7" BEL "pwm_controller0/pwm4/counter_6"
+        BEL "pwm_controller0/pwm4/counter_5" BEL
+        "pwm_controller0/pwm4/counter_4" BEL "pwm_controller0/pwm4/counter_3"
+        BEL "pwm_controller0/pwm4/counter_2" BEL
+        "pwm_controller0/pwm4/counter_1" BEL "pwm_controller0/pwm4/counter_0"
+        BEL "pwm_controller0/pwm4/period_reg_23" BEL
+        "pwm_controller0/pwm4/period_reg_22" BEL
+        "pwm_controller0/pwm4/period_reg_21" BEL
+        "pwm_controller0/pwm4/period_reg_20" BEL
+        "pwm_controller0/pwm4/period_reg_19" BEL
+        "pwm_controller0/pwm4/period_reg_18" BEL
+        "pwm_controller0/pwm4/period_reg_17" BEL
+        "pwm_controller0/pwm4/period_reg_16" BEL
+        "pwm_controller0/pwm4/period_reg_15" BEL
+        "pwm_controller0/pwm4/period_reg_14" BEL
+        "pwm_controller0/pwm4/period_reg_13" BEL
+        "pwm_controller0/pwm4/period_reg_12" BEL
+        "pwm_controller0/pwm4/period_reg_11" BEL
+        "pwm_controller0/pwm4/period_reg_10" BEL
+        "pwm_controller0/pwm4/period_reg_9" BEL
+        "pwm_controller0/pwm4/period_reg_8" BEL
+        "pwm_controller0/pwm4/period_reg_7" BEL
+        "pwm_controller0/pwm4/period_reg_6" BEL
+        "pwm_controller0/pwm4/period_reg_5" BEL
+        "pwm_controller0/pwm4/period_reg_4" BEL
+        "pwm_controller0/pwm4/period_reg_3" BEL
+        "pwm_controller0/pwm4/period_reg_2" BEL
+        "pwm_controller0/pwm4/period_reg_1" BEL
+        "pwm_controller0/pwm4/period_reg_0" BEL "pwm_controller0/pwm4/enable"
+        BEL "pwm_controller0/pwm3/enable" BEL "pwm_controller0/pwm2/enable"
+        BEL "pwm_controller0/pwm1/enable" BEL "everloop0/clk_cnt_0" BEL
+        "everloop0/clk_cnt_3" BEL "everloop0/clk_cnt_2" BEL
+        "everloop0/clk_cnt_1" BEL "everloop0/adr_b_10" BEL "everloop0/adr_b_8"
+        BEL "everloop0/adr_b_7" BEL "everloop0/adr_b_9" BEL
+        "everloop0/adr_b_6" BEL "everloop0/adr_b_5" BEL "everloop0/adr_b_3"
+        BEL "everloop0/adr_b_2" BEL "everloop0/adr_b_4" BEL
+        "everloop0/adr_b_1" BEL "everloop0/adr_b_0" BEL
+        "everloop0/everloopram0/ack_b" BEL "everloop0/swr_2" BEL
+        "everloop0/data_a_15" BEL "everloop0/data_a_14" BEL
+        "everloop0/data_a_13" BEL "everloop0/data_a_12" BEL
+        "everloop0/data_a_11" BEL "everloop0/data_a_10" BEL
+        "everloop0/data_a_9" BEL "everloop0/data_a_8" BEL "everloop0/data_a_7"
+        BEL "everloop0/data_a_6" BEL "everloop0/data_a_5" BEL
+        "everloop0/data_a_4" BEL "everloop0/data_a_3" BEL "everloop0/data_a_2"
+        BEL "everloop0/data_a_1" BEL "everloop0/data_a_0" BEL
+        "everloop0/everloop0/clk_cnt_7" BEL "everloop0/everloop0/clk_cnt_6"
+        BEL "everloop0/everloop0/clk_cnt_5" BEL
+        "everloop0/everloop0/clk_cnt_4" BEL "everloop0/everloop0/clk_cnt_3"
+        BEL "everloop0/everloop0/clk_cnt_2" BEL
+        "everloop0/everloop0/clk_cnt_1" BEL "everloop0/everloop0/clk_cnt_0"
+        BEL "everloop0/everloop0/data_cnt_2" BEL
+        "everloop0/everloop0/data_cnt_1" BEL "everloop0/everloop0/data_cnt_0"
+        BEL "everloop0/everloop0/rd_ant" BEL
+        "everloop0/everloop0/data_register_7" BEL
+        "everloop0/everloop0/data_register_6" BEL
+        "everloop0/everloop0/data_register_5" BEL
+        "everloop0/everloop0/data_register_4" BEL
+        "everloop0/everloop0/data_register_3" BEL
+        "everloop0/everloop0/data_register_2" BEL
+        "everloop0/everloop0/data_register_1" BEL
+        "everloop0/everloop0/data_register_0" BEL "everloop0/everloop0/rd_e"
+        BEL "gpio0/timer_stage[0].timer0/rTimer_input_2" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_11" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_8" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_5" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_10" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_7" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_4" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_1" BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/state_FSM_FFd1"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/state_FSM_FFd2"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_15"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_14"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_13"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_12"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_11"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_10"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_9"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_8"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_7"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_6"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_5"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_4"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_3"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_2"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_1"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[3].timer_core0/counter_result_0"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/state_FSM_FFd1"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/state_FSM_FFd2"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_15"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_14"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_13"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_12"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_11"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_10"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_9"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_8"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_7"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_6"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_5"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_4"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_3"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_2"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_1"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[2].timer_core0/counter_result_0"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/state_FSM_FFd1"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/state_FSM_FFd2"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_15"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_14"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_13"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_12"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_11"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_10"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_9"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_8"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_7"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_6"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_5"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_4"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_3"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_2"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_1"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[1].timer_core0/counter_result_0"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/state_FSM_FFd1"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/state_FSM_FFd2"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_15"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_14"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_13"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_12"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_11"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_10"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_9"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_8"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_7"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_6"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_5"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_4"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_3"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_2"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_1"
+        BEL
+        "gpio0/timer_stage[0].timer0/counter_stage[0].timer_core0/counter_result_0"
+        BEL "spi1/wb_dat_o_15" BEL "spi1/wb_dat_o_14" BEL "spi1/wb_dat_o_13"
+        BEL "spi1/wb_dat_o_12" BEL "spi1/wb_dat_o_11" BEL "spi1/wb_dat_o_10"
+        BEL "spi1/wb_dat_o_9" BEL "spi1/wb_dat_o_8" BEL "spi1/wb_dat_o_7" BEL
+        "spi1/wb_dat_o_6" BEL "spi1/wb_dat_o_5" BEL "spi1/wb_dat_o_4" BEL
+        "spi1/wb_dat_o_3" BEL "spi1/wb_dat_o_2" BEL "spi1/wb_dat_o_1" BEL
+        "spi1/wb_dat_o_0" BEL "spi1/start" BEL "spi1/divisor_15" BEL
+        "spi1/divisor_14" BEL "spi1/divisor_13" BEL "spi1/divisor_12" BEL
+        "spi1/divisor_11" BEL "spi1/divisor_10" BEL "spi1/divisor_9" BEL
+        "spi1/divisor_8" BEL "spi1/divisor_7" BEL "spi1/divisor_6" BEL
+        "spi1/divisor_5" BEL "spi1/divisor_4" BEL "spi1/divisor_3" BEL
+        "spi1/divisor_2" BEL "spi1/divisor_1" BEL "spi1/divisor_0" BEL
+        "spi1/spi0/bitcount_4" BEL "spi1/spi0/bitcount_3" BEL
+        "spi1/spi0/bitcount_2" BEL "spi1/spi0/bitcount_1" BEL
+        "spi1/spi0/bitcount_0" BEL "spi1/spi0/state_FSM_FFd1" BEL
+        "spi1/spi0/state_FSM_FFd2" BEL "spi1/spi0/prescaler_15" BEL
+        "spi1/spi0/prescaler_14" BEL "spi1/spi0/prescaler_13" BEL
+        "spi1/spi0/prescaler_12" BEL "spi1/spi0/prescaler_11" BEL
+        "spi1/spi0/prescaler_10" BEL "spi1/spi0/prescaler_9" BEL
+        "spi1/spi0/prescaler_8" BEL "spi1/spi0/prescaler_7" BEL
+        "spi1/spi0/prescaler_6" BEL "spi1/spi0/prescaler_5" BEL
+        "spi1/spi0/prescaler_4" BEL "spi1/spi0/prescaler_3" BEL
+        "spi1/spi0/prescaler_2" BEL "spi1/spi0/prescaler_1" BEL
+        "spi1/spi0/prescaler_0" BEL "spi1/spi0/sreg_15" BEL
+        "spi1/spi0/sreg_14" BEL "spi1/spi0/sreg_13" BEL "spi1/spi0/sreg_12"
+        BEL "spi1/spi0/sreg_11" BEL "spi1/spi0/sreg_10" BEL "spi1/spi0/sreg_9"
+        BEL "spi1/spi0/sreg_8" BEL "spi1/spi0/sreg_7" BEL "spi1/spi0/sreg_6"
+        BEL "spi1/spi0/sreg_5" BEL "spi1/spi0/sreg_4" BEL "spi1/spi0/sreg_3"
+        BEL "spi1/spi0/sreg_2" BEL "spi1/spi0/sreg_1" BEL "spi1/spi0/sreg_0"
+        BEL "spi1/spi0/rx_register_15" BEL "spi1/spi0/rx_register_14" BEL
+        "spi1/spi0/rx_register_13" BEL "spi1/spi0/rx_register_12" BEL
+        "spi1/spi0/rx_register_11" BEL "spi1/spi0/rx_register_10" BEL
+        "spi1/spi0/rx_register_9" BEL "spi1/spi0/rx_register_8" BEL
+        "spi1/spi0/rx_register_7" BEL "spi1/spi0/rx_register_6" BEL
+        "spi1/spi0/rx_register_5" BEL "spi1/spi0/rx_register_4" BEL
+        "spi1/spi0/rx_register_3" BEL "spi1/spi0/rx_register_2" BEL
+        "spi1/spi0/rx_register_1" BEL "spi1/spi0/rx_register_0" BEL
+        "spi1/spi_rst" BEL "spi1/spi_cs" BEL "spi1/spi0/sck" BEL
+        "pwm_controller0/pwm_we" BEL "pwm_controller0/pwm4/avail" BEL
+        "everloop0/add_adr_a" BEL "everloop0/everloop0/everloop_d" BEL
+        "everloop0/everloop0/sh_e" BEL "spi0/data_confn" BEL
+        "pwm_controller0/pwm_w_st" BEL "pwm_controller0/pwm4/PWM_out" BEL
+        "pwm_controller0/pwm3/PWM_out" BEL "pwm_controller0/pwm2/PWM_out" BEL
+        "pwm_controller0/pwm1/PWM_out" BEL "everloop0/reset_everloop" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<1>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<2>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<3>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<4>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<5>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<6>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<7>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<8>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<9>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<10>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<11>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<12>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<13>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<14>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<15>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<16>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<17>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<18>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<19>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<20>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<21>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<22>_FRB" BEL
+        "pwm_controller0/pwm4/period_reg[23]_GND_10_o_sub_20_OUT<23>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<1>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<2>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<3>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<4>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<5>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<6>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<7>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<8>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<9>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<10>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<11>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<12>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<13>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<14>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<15>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<16>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<17>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<18>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<19>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<20>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<21>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<22>_FRB" BEL
+        "pwm_controller0/pwm3/period_reg[23]_GND_10_o_sub_20_OUT<23>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<1>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<2>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<3>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<4>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<5>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<6>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<7>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<8>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<9>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<10>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<11>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<12>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<13>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<14>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<15>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<16>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<17>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<18>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<19>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<20>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<21>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<22>_FRB" BEL
+        "pwm_controller0/pwm2/period_reg[23]_GND_10_o_sub_20_OUT<23>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<0>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<1>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<2>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<3>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<4>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<5>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<6>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<7>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<8>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<9>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<10>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<11>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<12>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<13>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<14>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<15>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<16>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<17>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<18>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<19>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<20>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<21>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<22>_FRB" BEL
+        "pwm_controller0/pwm1/period_reg[23]_GND_10_o_sub_20_OUT<23>_FRB" BEL
+        "spi0/GND_8_o_auto_inc_AND_97_o11_FRB" BEL "N49_FRB" BEL "N50_FRB" BEL
+        "N51_FRB" BEL "N52_FRB" BEL "N53_FRB" BEL "N54_FRB" BEL "N55_FRB" BEL
+        "N56_FRB" BEL "N57_FRB" BEL "N58_FRB" BEL "N59_FRB" BEL "N60_FRB" BEL
+        "N61_FRB" BEL "N62_FRB" BEL "N63_FRB" BEL "N64_FRB" BEL "N65_FRB" BEL
+        "N66_FRB" BEL "N67_FRB" BEL "N68_FRB" BEL "N69_FRB" BEL "N70_FRB" BEL
+        "N71_FRB" BEL "N73_FRB" BEL "N74_FRB" BEL "N75_FRB" BEL "N76_FRB" BEL
+        "N77_FRB" BEL "N78_FRB" BEL "N79_FRB" BEL "N80_FRB" BEL "N81_FRB" BEL
+        "N82_FRB" BEL "N83_FRB" BEL "N84_FRB" BEL "N85_FRB" BEL "N86_FRB" BEL
+        "N87_FRB" BEL "N88_FRB" BEL "N89_FRB" BEL "N90_FRB" BEL "N91_FRB" BEL
+        "N92_FRB" BEL "N93_FRB" BEL "N94_FRB" BEL "N95_FRB" BEL "N96_FRB" BEL
+        "N98_FRB" BEL "N99_FRB" BEL "N100_FRB" BEL "N101_FRB" BEL "N102_FRB"
+        BEL "N103_FRB" BEL "N104_FRB" BEL "N105_FRB" BEL "N106_FRB" BEL
+        "N107_FRB" BEL "N108_FRB" BEL "N109_FRB" BEL "N110_FRB" BEL "N111_FRB"
+        BEL "N112_FRB" BEL "N113_FRB" BEL "N114_FRB" BEL "N115_FRB" BEL
+        "N116_FRB" BEL "N117_FRB" BEL "N118_FRB" BEL "N119_FRB" BEL "N120_FRB"
+        BEL "N121_FRB" BEL "N123_FRB" BEL "N124_FRB" BEL "N125_FRB" BEL
+        "N126_FRB" BEL "N127_FRB" BEL "N128_FRB" BEL "N129_FRB" BEL "N130_FRB"
+        BEL "N131_FRB" BEL "N132_FRB" BEL "N133_FRB" BEL "N134_FRB" BEL
+        "N135_FRB" BEL "N136_FRB" BEL "N137_FRB" BEL "N138_FRB" BEL "N139_FRB"
+        BEL "N140_FRB" BEL "N141_FRB" BEL "N142_FRB" BEL "N143_FRB" BEL
+        "N144_FRB" BEL "N145_FRB" BEL "N146_FRB" BEL "N148_FRB" BEL
+        "pwm_controller0/pwm4/Result<0>_FRB" BEL
+        "pwm_controller0/pwm4/Result<1>_FRB" BEL
+        "pwm_controller0/pwm4/Result<2>_FRB" BEL
+        "pwm_controller0/pwm4/Result<3>_FRB" BEL
+        "pwm_controller0/pwm4/Result<4>_FRB" BEL
+        "pwm_controller0/pwm4/Result<5>_FRB" BEL
+        "pwm_controller0/pwm4/Result<6>_FRB" BEL
+        "pwm_controller0/pwm4/Result<7>_FRB" BEL
+        "pwm_controller0/pwm4/Result<8>_FRB" BEL
+        "pwm_controller0/pwm4/Result<9>_FRB" BEL
+        "pwm_controller0/pwm4/Result<10>_FRB" BEL
+        "pwm_controller0/pwm4/Result<11>_FRB" BEL
+        "pwm_controller0/pwm4/Result<12>_FRB" BEL
+        "pwm_controller0/pwm4/Result<13>_FRB" BEL
+        "pwm_controller0/pwm4/Result<14>_FRB" BEL
+        "pwm_controller0/pwm4/Result<15>_FRB" BEL
+        "pwm_controller0/pwm4/Result<16>_FRB" BEL
+        "pwm_controller0/pwm4/Result<17>_FRB" BEL
+        "pwm_controller0/pwm4/Result<18>_FRB" BEL
+        "pwm_controller0/pwm4/Result<19>_FRB" BEL
+        "pwm_controller0/pwm4/Result<20>_FRB" BEL
+        "pwm_controller0/pwm4/Result<21>_FRB" BEL
+        "pwm_controller0/pwm4/Result<22>_FRB" BEL
+        "pwm_controller0/pwm4/Result<23>_FRB" BEL
+        "everloop0/everloop0/Result<0>_FRB" BEL
+        "everloop0/everloop0/Result<1>_FRB" BEL
+        "everloop0/everloop0/Result<2>_FRB" BEL
+        "everloop0/everloop0/Result<3>_FRB" BEL
+        "everloop0/everloop0/Result<4>_FRB" BEL
+        "everloop0/everloop0/Result<5>_FRB" BEL
+        "everloop0/everloop0/Result<6>_FRB" BEL
+        "everloop0/everloop0/Result<7>_FRB" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_9_BRB0" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_9_BRB1" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_9_BRB2" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_6_BRB0" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_6_BRB1" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_6_BRB2" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_3_BRB0" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_3_BRB1" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_3_BRB2" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_0_BRB0" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_0_BRB1" BEL
+        "gpio0/timer_stage[0].timer0/rTimer_input_0_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_23_BRB0" BEL
+        "pwm_controller0/pwm4/timeWork_reg_23_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_23_BRB0" BEL
+        "pwm_controller0/pwm3/timeWork_reg_23_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_23_BRB0" BEL
+        "pwm_controller0/pwm2/timeWork_reg_23_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_23_BRB0" BEL
+        "pwm_controller0/pwm1/timeWork_reg_23_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_22_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_22_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_22_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_22_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_21_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_21_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_21_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_21_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_20_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_20_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_20_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_20_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_0_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_0_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_0_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_0_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_19_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_19_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_19_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_19_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_18_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_18_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_18_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_18_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_17_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_17_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_17_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_17_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_16_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_16_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_16_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_16_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_15_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_15_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_15_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_15_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_14_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_14_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_14_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_14_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_13_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_13_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_13_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_13_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_12_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_12_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_12_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_12_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_11_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_11_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_11_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_11_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_10_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_10_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_10_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_10_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_9_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_9_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_9_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_9_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_8_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_8_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_8_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_8_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_7_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_7_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_7_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_7_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_6_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_6_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_6_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_6_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_5_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_5_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_5_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_5_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_4_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_4_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_4_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_4_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_3_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_3_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_3_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_3_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_2_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_2_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_2_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_2_BRB2" BEL
+        "pwm_controller0/pwm4/timeWork_reg_1_BRB2" BEL
+        "pwm_controller0/pwm3/timeWork_reg_1_BRB2" BEL
+        "pwm_controller0/pwm2/timeWork_reg_1_BRB2" BEL
+        "pwm_controller0/pwm1/timeWork_reg_1_BRB2" PIN
+        "bram0/Mram_ram_pins<10>" PIN "mcu_bram0/ram_pins<22>" PIN
+        "everloop0/everloopram0/Mram_ram_pins<20>" PIN
+        "everloop0/everloopram0/Mram_ram_pins<21>" BEL "spi1/spi_cs_1" BEL
+        "spi1/spi0/sck_1" BEL "spi1/spi_rst_1" BEL
+        "pwm_controller0/pwm1/PWM_out_1" BEL "pwm_controller0/pwm2/PWM_out_1"
+        BEL "pwm_controller0/pwm3/PWM_out_1" BEL
+        "pwm_controller0/pwm4/PWM_out_1" BEL "counter_25_1" BEL
+        "everloop0/Mshreg_swr_1" BEL "everloop0/swr_1";
+PIN mcu_bram0/ram_pins<21> = BEL "mcu_bram0/ram" PINNAME CLKA;
+TIMEGRP dcm_nclkfx = BEL "dcm/clkout2_buf" BEL "mcu_bram0/mcu_wdBus_7" BEL
+        "mcu_bram0/mcu_wdBus_6" BEL "mcu_bram0/mcu_wdBus_5" BEL
+        "mcu_bram0/mcu_wdBus_4" BEL "mcu_bram0/mcu_wdBus_3" BEL
+        "mcu_bram0/mcu_wdBus_2" BEL "mcu_bram0/mcu_wdBus_1" BEL
+        "mcu_bram0/mcu_wdBus_0" BEL "mcu_bram0/mcu_buffer_data_7" BEL
+        "mcu_bram0/mcu_buffer_data_6" BEL "mcu_bram0/mcu_buffer_data_5" BEL
+        "mcu_bram0/mcu_buffer_data_4" BEL "mcu_bram0/mcu_buffer_data_3" BEL
+        "mcu_bram0/mcu_buffer_data_2" BEL "mcu_bram0/mcu_buffer_data_1" BEL
+        "mcu_bram0/mcu_buffer_data_0" BEL "mcu_bram0/mcu_sncs" BEL
+        "mcu_bram0/mcu_snwe" BEL "mcu_bram0/mcu_buffer_addr_10" BEL
+        "mcu_bram0/mcu_buffer_addr_9" BEL "mcu_bram0/mcu_buffer_addr_8" BEL
+        "mcu_bram0/mcu_buffer_addr_7" BEL "mcu_bram0/mcu_buffer_addr_6" BEL
+        "mcu_bram0/mcu_buffer_addr_5" BEL "mcu_bram0/mcu_buffer_addr_4" BEL
+        "mcu_bram0/mcu_buffer_addr_3" BEL "mcu_bram0/mcu_buffer_addr_2" BEL
+        "mcu_bram0/mcu_buffer_addr_1" BEL "mcu_bram0/mcu_buffer_addr_0" BEL
+        "mcu_bram0/mcu_we" BEL "mcu_bram0/mcu_w_st" PIN
+        "mcu_bram0/ram_pins<21>";
+TIMEGRP sck_grp = BEL "spi0/SCKr_0";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN dcm/dcm_sp_inst_pins<4> = BEL "dcm/dcm_sp_inst" PINNAME CLKIN;
+TIMEGRP clk50_grp = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "dcm/dcm_sp_inst_pins<4>";
+TS_PER_CLK50 = PERIOD TIMEGRP "clk50_grp" 20 ns HIGH 50%;
+TS_PER_SCK = PERIOD TIMEGRP "sck_grp" 20 ns HIGH 50%;
+TS_dcm_clkfx = PERIOD TIMEGRP "dcm_clkfx" TS_PER_CLK50 / 4 HIGH 50%;
+TS_dcm_nclkfx = PERIOD TIMEGRP "dcm_nclkfx" TS_PER_CLK50 / 4 PHASE 2.5 ns HIGH
+        50%;
+SCHEMATIC END;
+
